@@ -1,0 +1,6482 @@
+<?xml version="1.0"?><rats_output>
+<stats>
+<dbcount lang="perl">33</dbcount>
+<dbcount lang="ruby">46</dbcount>
+<dbcount lang="python">62</dbcount>
+<dbcount lang="c">334</dbcount>
+<dbcount lang="php">55</dbcount>
+</stats>
+<vulnerability>
+  <severity>High</severity>
+  <type>fixed size global buffer</type>
+  <message>
+    Extra care should be taken to ensure that character arrays that are
+    allocated on the stack are used safely.  They are prime targets for
+    buffer overflow attacks.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/transport.c</name>
+    <line>66</line>
+    <line>167</line>
+    <line>281</line>
+  
+
+    <name>nmap-7.91/libssh2/src/crypt.c</name>
+    <line>259</line>
+  
+
+    <name>nmap-7.91/libssh2/src/knownhost.c</name>
+    <line>361</line>
+    <line>421</line>
+    <line>639</line>
+    <line>679</line>
+    <line>680</line>
+    <line>958</line>
+    <line>1197</line>
+  
+
+    <name>nmap-7.91/libssh2/src/hostkey.c</name>
+    <line>211</line>
+    <line>430</line>
+  
+
+    <name>nmap-7.91/libssh2/src/packet.c</name>
+    <line>857</line>
+    <line>1179</line>
+  
+
+    <name>nmap-7.91/libssh2/src/openssl.c</name>
+    <line>162</line>
+    <line>232</line>
+    <line>420</line>
+    <line>445</line>
+    <line>513</line>
+    <line>2530</line>
+    <line>2710</line>
+  
+
+    <name>nmap-7.91/libssh2/src/kex.c</name>
+    <line>301</line>
+    <line>329</line>
+    <line>992</line>
+    <line>1020</line>
+    <line>1509</line>
+    <line>1571</line>
+    <line>2099</line>
+    <line>2127</line>
+    <line>2724</line>
+    <line>2752</line>
+  
+
+    <name>nmap-7.91/libssh2/src/libgcrypt.c</name>
+    <line>94</line>
+    <line>430</line>
+    <line>520</line>
+  
+
+    <name>nmap-7.91/libssh2/src/mbedtls.c</name>
+    <line>464</line>
+    <line>622</line>
+    <line>652</line>
+  
+
+    <name>nmap-7.91/libssh2/src/sftp.c</name>
+    <line>1190</line>
+    <line>1566</line>
+    <line>1759</line>
+    <line>2358</line>
+    <line>2960</line>
+    <line>3096</line>
+    <line>3452</line>
+    <line>3589</line>
+  
+
+    <name>nmap-7.91/libssh2/src/userauth.c</name>
+    <line>66</line>
+    <line>216</line>
+    <line>843</line>
+    <line>1016</line>
+    <line>1090</line>
+    <line>1638</line>
+  
+
+    <name>nmap-7.91/libssh2/src/agent.c</name>
+    <line>181</line>
+    <line>289</line>
+  
+
+    <name>nmap-7.91/libssh2/src/mac.c</name>
+    <line>112</line>
+    <line>157</line>
+    <line>202</line>
+    <line>242</line>
+    <line>275</line>
+    <line>315</line>
+    <line>348</line>
+  
+
+    <name>nmap-7.91/libssh2/src/misc.c</name>
+    <line>338</line>
+    <line>339</line>
+    <line>432</line>
+  
+
+    <name>nmap-7.91/libssh2/src/publickey.c</name>
+    <line>138</line>
+  
+
+    <name>nmap-7.91/libssh2/src/pem.c</name>
+    <line>113</line>
+    <line>114</line>
+    <line>210</line>
+    <line>297</line>
+    <line>665</line>
+    <line>735</line>
+  
+
+    <name>nmap-7.91/libssh2/src/session.c</name>
+    <line>205</line>
+  
+
+    <name>nmap-7.91/libssh2/src/channel.c</name>
+    <line>136</line>
+    <line>321</line>
+    <line>464</line>
+    <line>806</line>
+    <line>934</line>
+    <line>1133</line>
+    <line>1186</line>
+    <line>1285</line>
+    <line>2245</line>
+    <line>2565</line>
+  
+
+    <name>nmap-7.91/libssh2/os400/ccsid.c</name>
+    <line>62</line>
+    <line>78</line>
+  
+
+    <name>nmap-7.91/libssh2/vms/man2help.c</name>
+    <line>22</line>
+    <line>52</line>
+    <line>110</line>
+    <line>174</line>
+    <line>203</line>
+  
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>729</line>
+    <line>749</line>
+    <line>770</line>
+    <line>863</line>
+    <line>883</line>
+    <line>884</line>
+    <line>947</line>
+    <line>948</line>
+    <line>949</line>
+    <line>979</line>
+    <line>1015</line>
+    <line>1016</line>
+    <line>1076</line>
+    <line>1172</line>
+    <line>1206</line>
+    <line>1207</line>
+    <line>1304</line>
+    <line>1330</line>
+  
+
+    <name>nmap-7.91/protocols.cc</name>
+    <line>79</line>
+    <line>81</line>
+    <line>84</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_compile.c</name>
+    <line>776</line>
+  
+
+    <name>nmap-7.91/nse_nmaplib.cc</name>
+    <line>728</line>
+    <line>875</line>
+    <line>877</line>
+  
+
+    <name>nmap-7.91/traceroute.cc</name>
+    <line>838</line>
+  
+
+    <name>nmap-7.91/services.cc</name>
+    <line>116</line>
+    <line>118</line>
+    <line>121</line>
+    <line>126</line>
+  
+
+    <name>nmap-7.91/main.cc</name>
+    <line>112</line>
+  
+
+    <name>nmap-7.91/nse_fs.cc</name>
+    <line>65</line>
+  
+
+    <name>nmap-7.91/liblinear/linear.cpp</name>
+    <line>35</line>
+    <line>2221</line>
+  
+
+    <name>nmap-7.91/liblinear/train.c</name>
+    <line>87</line>
+    <line>88</line>
+  
+
+    <name>nmap-7.91/liblinear/tron.cpp</name>
+    <line>36</line>
+  
+
+    <name>nmap-7.91/nse_zlib.cc</name>
+    <line>84</line>
+  
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>154</line>
+    <line>173</line>
+    <line>220</line>
+    <line>360</line>
+    <line>1249</line>
+    <line>1499</line>
+    <line>1609</line>
+    <line>1610</line>
+    <line>1727</line>
+    <line>1802</line>
+    <line>1973</line>
+    <line>2005</line>
+    <line>2207</line>
+    <line>2208</line>
+    <line>2209</line>
+    <line>2210</line>
+    <line>2211</line>
+    <line>2212</line>
+    <line>2213</line>
+    <line>2214</line>
+    <line>2320</line>
+    <line>2321</line>
+    <line>2322</line>
+    <line>2323</line>
+    <line>2622</line>
+    <line>3092</line>
+    <line>3184</line>
+    <line>3302</line>
+    <line>3303</line>
+    <line>3906</line>
+    <line>3907</line>
+    <line>3912</line>
+    <line>3917</line>
+    <line>3987</line>
+    <line>3989</line>
+    <line>4070</line>
+    <line>4437</line>
+    <line>4447</line>
+    <line>4453</line>
+    <line>4557</line>
+    <line>4671</line>
+  
+
+    <name>nmap-7.91/libnetutil/IPv4Header.cc</name>
+    <line>157</line>
+    <line>161</line>
+    <line>162</line>
+    <line>584</line>
+  
+
+    <name>nmap-7.91/libnetutil/IPv6Header.cc</name>
+    <line>148</line>
+    <line>151</line>
+  
+
+    <name>nmap-7.91/libnetutil/TCPHeader.cc</name>
+    <line>159</line>
+  
+
+    <name>nmap-7.91/libnetutil/ICMPv4Header.cc</name>
+    <line>165</line>
+  
+
+    <name>nmap-7.91/FingerPrintResults.cc</name>
+    <line>133</line>
+    <line>187</line>
+  
+
+    <name>nmap-7.91/tcpip.cc</name>
+    <line>119</line>
+    <line>146</line>
+    <line>147</line>
+    <line>199</line>
+    <line>200</line>
+    <line>201</line>
+    <line>334</line>
+    <line>335</line>
+    <line>390</line>
+    <line>1167</line>
+    <line>1243</line>
+  
+
+    <name>nmap-7.91/MACLookup.cc</name>
+    <line>88</line>
+    <line>90</line>
+  
+
+    <name>nmap-7.91/scan_lists.cc</name>
+    <line>325</line>
+  
+
+    <name>nmap-7.91/nsock/src/netutils.c</name>
+    <line>160</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_pcap.c</name>
+    <line>218</line>
+    <line>219</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_write.c</name>
+    <line>72</line>
+    <line>135</line>
+    <line>171</line>
+    <line>176</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_core.c</name>
+    <line>604</line>
+    <line>1347</line>
+    <line>1348</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_ssl.c</name>
+    <line>118</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>890</line>
+    <line>921</line>
+    <line>1064</line>
+    <line>1159</line>
+    <line>1804</line>
+    <line>2375</line>
+    <line>2464</line>
+    <line>2580</line>
+    <line>3102</line>
+    <line>7395</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-libdlpi.c</name>
+    <line>60</line>
+  
+
+    <name>nmap-7.91/libpcap/bpf_image.c</name>
+    <line>41</line>
+    <line>42</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-new.c</name>
+    <line>77</line>
+    <line>81</line>
+    <line>356</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>261</line>
+    <line>423</line>
+    <line>504</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-npf.c</name>
+    <line>1167</line>
+    <line>1875</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-usb-linux.c</name>
+    <line>231</line>
+    <line>232</line>
+    <line>265</line>
+    <line>504</line>
+    <line>601</line>
+    <line>835</line>
+    <line>930</line>
+    <line>1035</line>
+    <line>1036</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bt-linux.c</name>
+    <line>113</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dag.c</name>
+    <line>1138</line>
+    <line>1140</line>
+  
+
+    <name>nmap-7.91/libpcap/nametoaddr.c</name>
+    <line>107</line>
+    <line>230</line>
+    <line>263</line>
+    <line>503</line>
+    <line>519</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-rpcap.c</name>
+    <line>1015</line>
+    <line>1017</line>
+    <line>1021</line>
+    <line>1503</line>
+    <line>1610</line>
+    <line>1611</line>
+    <line>1612</line>
+    <line>1613</line>
+    <line>1614</line>
+    <line>1733</line>
+    <line>1836</line>
+    <line>2191</line>
+    <line>2196</line>
+    <line>2352</line>
+    <line>2353</line>
+    <line>2393</line>
+    <line>2879</line>
+    <line>3100</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>483</line>
+    <line>1312</line>
+    <line>1724</line>
+    <line>2581</line>
+  
+
+    <name>nmap-7.91/libpcap/sf-pcap.c</name>
+    <line>598</line>
+  
+
+    <name>nmap-7.91/libpcap/fmtutils.c</name>
+    <line>114</line>
+    <line>161</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dlpi.c</name>
+    <line>351</line>
+    <line>357</line>
+    <line>513</line>
+    <line>1014</line>
+    <line>1082</line>
+    <line>1085</line>
+    <line>1157</line>
+    <line>1158</line>
+    <line>1613</line>
+    <line>1617</line>
+    <line>1810</line>
+  
+
+    <name>nmap-7.91/libpcap/sockutils.c</name>
+    <line>426</line>
+    <line>427</line>
+    <line>527</line>
+    <line>1199</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-netfilter-linux.c</name>
+    <line>318</line>
+  
+
+    <name>nmap-7.91/libpcap/grammar.c</name>
+    <line>1691</line>
+    <line>1884</line>
+  
+
+    <name>nmap-7.91/libpcap/msdos/pktdrvr.c</name>
+    <line>362</line>
+    <line>363</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snf.c</name>
+    <line>352</line>
+    <line>353</line>
+  
+
+    <name>nmap-7.91/libpcap/optimize.c</name>
+    <line>2651</line>
+  
+
+    <name>nmap-7.91/libpcap/rpcap-protocol.c</name>
+    <line>83</line>
+  
+
+    <name>nmap-7.91/xml.cc</name>
+    <line>152</line>
+    <line>221</line>
+  
+
+    <name>nmap-7.91/utils.cc</name>
+    <line>252</line>
+    <line>443</line>
+    <line>498</line>
+  
+
+    <name>nmap-7.91/nmap_error.cc</name>
+    <line>90</line>
+    <line>119</line>
+    <line>159</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_ssl.c</name>
+    <line>143</line>
+    <line>456</line>
+    <line>571</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_win.c</name>
+    <line>90</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_listen.c</name>
+    <line>535</line>
+    <line>576</line>
+    <line>630</line>
+    <line>979</line>
+    <line>1127</line>
+    <line>1159</line>
+  
+
+    <name>nmap-7.91/ncat/util.c</name>
+    <line>270</line>
+    <line>325</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_posix.c</name>
+    <line>126</line>
+  
+
+    <name>nmap-7.91/ncat/test/addrset.c</name>
+    <line>55</line>
+  
+
+    <name>nmap-7.91/ncat/test/test-cmdline-split.c</name>
+    <line>73</line>
+  
+
+    <name>nmap-7.91/ncat/http_digest.c</name>
+    <line>141</line>
+    <line>142</line>
+    <line>143</line>
+    <line>171</line>
+    <line>172</line>
+    <line>261</line>
+    <line>262</line>
+    <line>263</line>
+    <line>264</line>
+    <line>324</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_proxy.c</name>
+    <line>466</line>
+    <line>579</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_core.c</name>
+    <line>170</line>
+    <line>455</line>
+    <line>558</line>
+    <line>559</line>
+    <line>574</line>
+    <line>603</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_exec_win.c</name>
+    <line>191</line>
+    <line>329</line>
+    <line>396</line>
+    <line>420</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>129</line>
+    <line>234</line>
+    <line>245</line>
+    <line>292</line>
+    <line>389</line>
+    <line>548</line>
+    <line>644</line>
+    <line>655</line>
+  
+
+    <name>nmap-7.91/payload.cc</name>
+    <line>118</line>
+    <line>284</line>
+  
+
+    <name>nmap-7.91/liblua/liolib.c</name>
+    <line>394</line>
+    <line>444</line>
+  
+
+    <name>nmap-7.91/liblua/llex.c</name>
+    <line>346</line>
+  
+
+    <name>nmap-7.91/liblua/lauxlib.c</name>
+    <line>638</line>
+  
+
+    <name>nmap-7.91/liblua/lstrlib.c</name>
+    <line>916</line>
+    <line>1030</line>
+    <line>1146</line>
+  
+
+    <name>nmap-7.91/liblua/ldblib.c</name>
+    <line>382</line>
+    <line>404</line>
+  
+
+    <name>nmap-7.91/liblua/loslib.c</name>
+    <line>167</line>
+    <line>303</line>
+  
+
+    <name>nmap-7.91/liblua/luac.c</name>
+    <line>267</line>
+  
+
+    <name>nmap-7.91/liblua/lvm.c</name>
+    <line>498</line>
+  
+
+    <name>nmap-7.91/liblua/lundump.c</name>
+    <line>95</line>
+    <line>220</line>
+  
+
+    <name>nmap-7.91/liblua/lua.c</name>
+    <line>308</line>
+  
+
+    <name>nmap-7.91/liblua/lstate.c</name>
+    <line>82</line>
+  
+
+    <name>nmap-7.91/liblua/lobject.c</name>
+    <line>282</line>
+    <line>372</line>
+    <line>437</line>
+    <line>444</line>
+  
+
+    <name>nmap-7.91/liblua/loadlib.c</name>
+    <line>169</line>
+    <line>187</line>
+  
+
+    <name>nmap-7.91/liblua/ldebug.c</name>
+    <line>630</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>83</line>
+    <line>773</line>
+    <line>819</line>
+    <line>906</line>
+    <line>958</line>
+    <line>1034</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf-win32.c</name>
+    <line>260</line>
+    <line>551</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-linux.c</name>
+    <line>204</line>
+    <line>228</line>
+    <line>229</line>
+    <line>263</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-solaris.c</name>
+    <line>36</line>
+    <line>43</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-win32.c</name>
+    <line>59</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-ndd.c</name>
+    <line>26</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-dlpi.c</name>
+    <line>99</line>
+    <line>137</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>213</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-bsd.c</name>
+    <line>176</line>
+    <line>348</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/ip-cooked.c</name>
+    <line>29</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-pfilt.c</name>
+    <line>30</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-bsd.c</name>
+    <line>36</line>
+    <line>43</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/addr.c</name>
+    <line>175</line>
+    <line>233</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-bsd.c</name>
+    <line>36</line>
+  
+
+    <name>nmap-7.91/nping/EchoServer.cc</name>
+    <line>1375</line>
+  
+
+    <name>nmap-7.91/nping/winfix.cc</name>
+    <line>114</line>
+    <line>176</line>
+    <line>197</line>
+  
+
+    <name>nmap-7.91/nping/NpingTarget.cc</name>
+    <line>594</line>
+    <line>618</line>
+    <line>638</line>
+    <line>657</line>
+  
+
+    <name>nmap-7.91/nping/ProbeMode.cc</name>
+    <line>162</line>
+    <line>1251</line>
+    <line>1252</line>
+    <line>1565</line>
+    <line>1839</line>
+    <line>2074</line>
+  
+
+    <name>nmap-7.91/nping/nping.cc</name>
+    <line>102</line>
+  
+
+    <name>nmap-7.91/nping/ArgParser.cc</name>
+    <line>103</line>
+    <line>408</line>
+    <line>1261</line>
+    <line>1262</line>
+  
+
+    <name>nmap-7.91/nping/utils.cc</name>
+    <line>142</line>
+    <line>197</line>
+    <line>290</line>
+    <line>296</line>
+    <line>297</line>
+  
+
+    <name>nmap-7.91/nping/NpingTargets.cc</name>
+    <line>182</line>
+    <line>219</line>
+  
+
+    <name>nmap-7.91/nping/common_modified.cc</name>
+    <line>342</line>
+  
+
+    <name>nmap-7.91/nping/NEPContext.cc</name>
+    <line>252</line>
+  
+
+    <name>nmap-7.91/nping/NpingOps.cc</name>
+    <line>375</line>
+    <line>2339</line>
+    <line>2345</line>
+    <line>2367</line>
+    <line>2644</line>
+    <line>2756</line>
+  
+
+    <name>nmap-7.91/nping/output.cc</name>
+    <line>83</line>
+    <line>120</line>
+    <line>162</line>
+    <line>204</line>
+    <line>220</line>
+    <line>236</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>99</line>
+    <line>122</line>
+    <line>161</line>
+    <line>171</line>
+    <line>181</line>
+    <line>514</line>
+    <line>610</line>
+    <line>766</line>
+    <line>808</line>
+    <line>824</line>
+    <line>891</line>
+    <line>892</line>
+    <line>893</line>
+    <line>894</line>
+    <line>895</line>
+    <line>900</line>
+    <line>901</line>
+    <line>1010</line>
+    <line>1015</line>
+    <line>1016</line>
+    <line>1086</line>
+    <line>1087</line>
+    <line>1476</line>
+    <line>1477</line>
+    <line>1580</line>
+    <line>1670</line>
+    <line>1671</line>
+    <line>1799</line>
+  
+
+    <name>nmap-7.91/nse_main.cc</name>
+    <line>273</line>
+    <line>576</line>
+  
+
+    <name>nmap-7.91/scan_engine_raw.cc</name>
+    <line>938</line>
+    <line>958</line>
+    <line>1059</line>
+    <line>1071</line>
+  
+
+    <name>nmap-7.91/libz/gzlib.c</name>
+    <line>36</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream3/test.cc</name>
+    <line>15</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream3/zfstream.cc</name>
+    <line>62</line>
+    <line>90</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/zip.c</name>
+    <line>120</line>
+    <line>289</line>
+    <line>1246</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/miniunz.c</name>
+    <line>209</line>
+    <line>248</line>
+    <line>318</line>
+    <line>386</line>
+    <line>541</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/mztools.c</name>
+    <line>44</line>
+    <line>45</line>
+    <line>46</line>
+    <line>149</line>
+    <line>224</line>
+    <line>260</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/unzip.c</name>
+    <line>1266</line>
+    <line>1482</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/minizip.c</name>
+    <line>110</line>
+    <line>255</line>
+    <line>349</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream/zfstream.cpp</name>
+    <line>24</line>
+    <line>66</line>
+  
+
+    <name>nmap-7.91/libz/contrib/blast/blast.c</name>
+    <line>58</line>
+    <line>312</line>
+    <line>434</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>70</line>
+    <line>71</line>
+    <line>72</line>
+    <line>73</line>
+    <line>74</line>
+    <line>75</line>
+    <line>76</line>
+    <line>78</line>
+    <line>79</line>
+    <line>80</line>
+    <line>81</line>
+    <line>82</line>
+    <line>83</line>
+    <line>84</line>
+    <line>85</line>
+    <line>91</line>
+    <line>134</line>
+    <line>194</line>
+    <line>394</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream2/zstream_test.cpp</name>
+    <line>7</line>
+    <line>14</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>309</line>
+  
+
+    <name>nmap-7.91/libz/test/minigzip.c</name>
+    <line>83</line>
+    <line>242</line>
+    <line>267</line>
+    <line>301</line>
+    <line>366</line>
+    <line>434</line>
+    <line>461</line>
+    <line>499</line>
+    <line>563</line>
+  
+
+    <name>nmap-7.91/libz/test/infcover.c</name>
+    <line>392</line>
+    <line>474</line>
+  
+
+    <name>nmap-7.91/libz/inflate.c</name>
+    <line>640</line>
+  
+
+    <name>nmap-7.91/libz/gzread.c</name>
+    <line>451</line>
+  
+
+    <name>nmap-7.91/targets.cc</name>
+    <line>155</line>
+    <line>201</line>
+    <line>326</line>
+  
+
+    <name>nmap-7.91/osscan2.cc</name>
+    <line>394</line>
+    <line>396</line>
+    <line>2720</line>
+    <line>2801</line>
+    <line>2802</line>
+    <line>2900</line>
+    <line>2901</line>
+    <line>3007</line>
+    <line>3665</line>
+  
+
+    <name>nmap-7.91/mswin32/winfix.cc</name>
+    <line>116</line>
+    <line>178</line>
+    <line>199</line>
+  
+
+    <name>nmap-7.91/nbase/inet_pton.c</name>
+    <line>117</line>
+    <line>170</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_str.c</name>
+    <line>73</line>
+  
+
+    <name>nmap-7.91/nbase/getaddrinfo.c</name>
+    <line>90</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_misc.c</name>
+    <line>112</line>
+    <line>171</line>
+    <line>268</line>
+    <line>642</line>
+    <line>649</line>
+    <line>650</line>
+    <line>760</line>
+    <line>780</line>
+    <line>793</line>
+  
+
+    <name>nmap-7.91/nbase/inet_ntop.c</name>
+    <line>155</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_addrset.c</name>
+    <line>638</line>
+    <line>692</line>
+    <line>738</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_winunix.c</name>
+    <line>109</line>
+  
+
+    <name>nmap-7.91/service_scan.cc</name>
+    <line>139</line>
+    <line>140</line>
+    <line>141</line>
+    <line>142</line>
+    <line>143</line>
+    <line>144</line>
+    <line>145</line>
+    <line>146</line>
+    <line>147</line>
+    <line>227</line>
+    <line>497</line>
+    <line>498</line>
+    <line>499</line>
+    <line>500</line>
+    <line>501</line>
+    <line>502</line>
+    <line>503</line>
+    <line>655</line>
+    <line>688</line>
+    <line>791</line>
+    <line>1284</line>
+    <line>1371</line>
+    <line>1662</line>
+    <line>1985</line>
+    <line>2769</line>
+    <line>2816</line>
+  
+
+    <name>nmap-7.91/nselib/data/psexec/nmap_service.c</name>
+    <line>113</line>
+    <line>199</line>
+  
+
+    <name>nmap-7.91/osscan.cc</name>
+    <line>453</line>
+    <line>454</line>
+    <line>655</line>
+    <line>656</line>
+    <line>707</line>
+    <line>777</line>
+    <line>960</line>
+    <line>1065</line>
+  
+
+    <name>nmap-7.91/nse_pcrelib.cc</name>
+    <line>40</line>
+    <line>84</line>
+    <line>104</line>
+  
+
+    <name>nmap-7.91/nse_dnet.cc</name>
+    <line>50</line>
+    <line>218</line>
+  
+
+    <name>nmap-7.91/nse_ssl_cert.cc</name>
+    <line>122</line>
+    <line>233</line>
+    <line>269</line>
+  
+
+    <name>nmap-7.91/NmapOps.cc</name>
+    <line>189</line>
+    <line>596</line>
+  
+
+    <name>nmap-7.91/FPEngine.cc</name>
+    <line>345</line>
+    <line>621</line>
+    <line>623</line>
+    <line>1704</line>
+  
+
+    <name>nmap-7.91/nse_libssh2.cc</name>
+    <line>239</line>
+    <line>421</line>
+    <line>676</line>
+    <line>704</line>
+  
+
+    <name>nmap-7.91/nmap_ftp.cc</name>
+    <line>121</line>
+    <line>122</line>
+    <line>212</line>
+    <line>213</line>
+    <line>214</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>509</line>
+    <line>876</line>
+    <line>1108</line>
+    <line>1120</line>
+    <line>1384</line>
+    <line>1469</line>
+    <line>1581</line>
+    <line>1773</line>
+    <line>1783</line>
+    <line>1787</line>
+    <line>2316</line>
+    <line>2560</line>
+    <line>2607</line>
+  
+
+    <name>nmap-7.91/nse_openssl.cc</name>
+    <line>281</line>
+    <line>291</line>
+    <line>301</line>
+    <line>311</line>
+    <line>323</line>
+    <line>358</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>246</line>
+    <line>269</line>
+    <line>316</line>
+    <line>412</line>
+    <line>435</line>
+    <line>502</line>
+    <line>503</line>
+    <line>504</line>
+    <line>507</line>
+    <line>513</line>
+    <line>586</line>
+    <line>619</line>
+    <line>728</line>
+    <line>870</line>
+    <line>1274</line>
+    <line>1388</line>
+    <line>1531</line>
+    <line>1532</line>
+    <line>1533</line>
+    <line>1535</line>
+    <line>1537</line>
+    <line>1650</line>
+    <line>1724</line>
+    <line>1783</line>
+    <line>1853</line>
+    <line>1988</line>
+    <line>2102</line>
+    <line>2103</line>
+    <line>2104</line>
+    <line>2105</line>
+    <line>2371</line>
+    <line>2481</line>
+    <line>2520</line>
+    <line>2523</line>
+  
+
+    <name>nmap-7.91/scan_engine.cc</name>
+    <line>174</line>
+    <line>1194</line>
+    <line>2046</line>
+    <line>2152</line>
+    <line>2257</line>
+    <line>2285</line>
+    <line>2695</line>
+    <line>2744</line>
+  
+
+    <name>nmap-7.91/nse_nsock.cc</name>
+    <line>306</line>
+    <line>307</line>
+    <line>981</line>
+  
+
+    <name>nmap-7.91/portreasons.cc</name>
+    <line>479</line>
+    <line>489</line>
+  
+
+    <name>nmap-7.91/NmapOutputTable.cc</name>
+    <line>164</line>
+  
+
+    <name>nmap-7.91/tests/nmap_dns_test.cc</name>
+    <line>134</line>
+  
+
+    <name>nmap-7.91/idle_scan.cc</name>
+    <line>286</line>
+    <line>362</line>
+    <line>365</line>
+    <line>489</line>
+    <line>490</line>
+    <line>1342</line>
+    <line>1347</line>
+    <line>1402</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>getenv</type>
+  <message>
+    Environment variables are highly untrustable input. They may be of any length, and contain any data. Do not make any assumptions regarding content or length. If at all possible avoid using them, and if it is necessary, sanitize them and truncate them to a reasonable length.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/agent.c</name>
+    <line>154</line>
+  
+
+    <name>nmap-7.91/main.cc</name>
+    <line>141</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dag.c</name>
+    <line>934</line>
+    <line>948</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dlpi.c</name>
+    <line>807</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dos.c</name>
+    <line>968</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snf.c</name>
+    <line>262</line>
+    <line>264</line>
+    <line>288</line>
+    <line>369</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_main.c</name>
+    <line>766</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_exec_win.c</name>
+    <line>287</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>994</line>
+  
+
+    <name>nmap-7.91/liblua/loslib.c</name>
+    <line>178</line>
+  
+
+    <name>nmap-7.91/liblua/lua.c</name>
+    <line>537</line>
+    <line>540</line>
+  
+
+    <name>nmap-7.91/liblua/loadlib.c</name>
+    <line>294</line>
+    <line>296</line>
+  
+
+    <name>nmap-7.91/nping/NpingOps.cc</name>
+    <line>137</line>
+    <line>137</line>
+    <line>139</line>
+    <line>139</line>
+  
+
+    <name>nmap-7.91/nbase/getopt.c</name>
+    <line>67</line>
+    <line>163</line>
+  
+
+    <name>nmap-7.91/NmapOps.cc</name>
+    <line>219</line>
+    <line>221</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>2617</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>vsprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>nmap-7.91/libssh2/os400/os400sys.c</name>
+    <line>152</line>
+  
+
+    <name>nmap-7.91/liblinear/linear.cpp</name>
+    <line>38</line>
+  
+
+    <name>nmap-7.91/liblinear/tron.cpp</name>
+    <line>39</line>
+  
+
+    <name>nmap-7.91/libpcap/missing/snprintf.c</name>
+    <line>511</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>417</line>
+    <line>421</line>
+  
+
+    <name>nmap-7.91/nbase/snprintf.c</name>
+    <line>502</line>
+    <line>579</line>
+    <line>609</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>vsprintf</type>
+  <message>
+    Check to be sure that the format string passed as argument 2 to this
+    function call does not come from an untrusted source that could have added
+    formatting characters that the code is not prepared to handle.
+    Additionally, the format string could contain `%s' without precision that
+    could result in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/libssh2/os400/os400sys.c</name>
+    <line>152</line>
+  
+
+    <name>nmap-7.91/liblinear/linear.cpp</name>
+    <line>38</line>
+  
+
+    <name>nmap-7.91/liblinear/tron.cpp</name>
+    <line>39</line>
+  
+
+    <name>nmap-7.91/libpcap/missing/snprintf.c</name>
+    <line>511</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>417</line>
+    <line>421</line>
+  
+
+    <name>nmap-7.91/nbase/snprintf.c</name>
+    <line>502</line>
+    <line>579</line>
+    <line>609</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <message>
+    Check to be sure that argument 2 passed to this function call will not
+    copy more data than can be handled, resulting in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/libssh2/vms/man2help.c</name>
+    <line>125</line>
+  
+
+    <name>nmap-7.91/liblinear/train.c</name>
+    <line>215</line>
+    <line>218</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>300</line>
+    <line>443</line>
+    <line>487</line>
+    <line>713</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-tc.c</name>
+    <line>523</line>
+    <line>524</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>584</line>
+    <line>602</line>
+  
+
+    <name>nmap-7.91/liblua/lstrlib.c</name>
+    <line>1010</line>
+  
+
+    <name>nmap-7.91/liblua/lobject.c</name>
+    <line>286</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>295</line>
+  
+
+    <name>nmap-7.91/libz/gzlib.c</name>
+    <line>216</line>
+    <line>614</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/miniunz.c</name>
+    <line>154</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>137</line>
+    <line>142</line>
+  
+
+    <name>nmap-7.91/libz/test/minigzip.c</name>
+    <line>473</line>
+    <line>513</line>
+  
+
+    <name>nmap-7.91/libz/test/infcover.c</name>
+    <line>529</line>
+    <line>555</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>737</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>sscanf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>970</line>
+    <line>998</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-usb-linux.c</name>
+    <line>628</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bt-linux.c</name>
+    <line>195</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>sscanf</type>
+  <message>
+    Check to be sure that the format string passed as argument 2 to this
+    function call does not come from an untrusted source that could have added
+    formatting characters that the code is not prepared to handle.
+    Additionally, the format string could contain `%s' without precision that
+    could result in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>970</line>
+    <line>998</line>
+  
+
+    <name>nmap-7.91/protocols.cc</name>
+    <line>110</line>
+  
+
+    <name>nmap-7.91/services.cc</name>
+    <line>174</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-usb-linux.c</name>
+    <line>628</line>
+    <line>865</line>
+    <line>931</line>
+    <line>1090</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bt-linux.c</name>
+    <line>195</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>780</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-linux.c</name>
+    <line>237</line>
+    <line>268</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-dlpi.c</name>
+    <line>109</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>221</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>sprintf</type>
+  <message>
+    Check to be sure that the format string passed as argument 2 to this
+    function call does not come from an untrusted source that could have added
+    formatting characters that the code is not prepared to handle.
+    Additionally, the format string could contain `%s' without precision that
+    could result in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/libpcre/pcreposix.c</name>
+    <line>181</line>
+  
+
+    <name>nmap-7.91/nse_fs.cc</name>
+    <line>232</line>
+  
+
+    <name>nmap-7.91/liblinear/train.c</name>
+    <line>226</line>
+  
+
+    <name>nmap-7.91/nsock/src/netutils.c</name>
+    <line>164</line>
+    <line>169</line>
+  
+
+    <name>nmap-7.91/liblua/luac.c</name>
+    <line>268</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>840</line>
+    <line>841</line>
+    <line>844</line>
+    <line>845</line>
+    <line>848</line>
+    <line>851</line>
+    <line>854</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>511</line>
+    <line>517</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <message>
+    Check to be sure that argument 2 passed to this function call will not
+    copy more data than can be handled, resulting in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/main.cc</name>
+    <line>148</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>1841</line>
+    <line>2616</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dos.c</name>
+    <line>696</line>
+  
+
+    <name>nmap-7.91/libz/gzlib.c</name>
+    <line>616</line>
+  
+
+    <name>nmap-7.91/libz/test/minigzip.c</name>
+    <line>474</line>
+    <line>526</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>printf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 1 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>nmap-7.91/nse_debug.cc</name>
+    <line>37</line>
+  
+
+    <name>nmap-7.91/nsock/tests/tests_main.c</name>
+    <line>123</line>
+    <line>126</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_main.c</name>
+    <line>576</line>
+  
+
+    <name>nmap-7.91/liblua/luac.c</name>
+    <line>263</line>
+    <line>274</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/blob.c</name>
+    <line>445</line>
+    <line>448</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>195</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>fscanf</type>
+  <message>
+    Check to be sure that the format string passed as argument 2 to this
+    function call does not come from an untrusted source that could have added
+    formatting characters that the code is not prepared to handle.
+    Additionally, the format string could contain `%s' without precision that
+    could result in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/liblinear/linear.cpp</name>
+    <line>2224</line>
+    <line>2227</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>vfprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>162</line>
+    <line>181</line>
+  
+
+    <name>nmap-7.91/nsock/src/error.c</name>
+    <line>69</line>
+    <line>81</line>
+  
+
+    <name>nmap-7.91/libpcap/msdos/bin2c.c</name>
+    <line>10</line>
+  
+
+    <name>nmap-7.91/ncat/util.c</name>
+    <line>132</line>
+    <line>144</line>
+    <line>155</line>
+    <line>166</line>
+    <line>197</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/err.c</name>
+    <line>56</line>
+    <line>75</line>
+    <line>93</line>
+    <line>106</line>
+  
+
+    <name>nmap-7.91/nping/output.cc</name>
+    <line>101</line>
+    <line>145</line>
+    <line>186</line>
+    <line>209</line>
+    <line>225</line>
+    <line>241</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_memalloc.c</name>
+    <line>79</line>
+  
+
+    <name>nmap-7.91/nselib/data/psexec/nmap_service.c</name>
+    <line>64</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>956</line>
+    <line>961</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>strncat</type>
+  <message>
+    Consider using strlcat() instead.
+  </message>
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>2469</line>
+    <line>2523</line>
+  
+
+    <name>nmap-7.91/portlist.cc</name>
+    <line>200</line>
+    <line>201</line>
+    <line>205</line>
+    <line>213</line>
+    <line>218</line>
+    <line>219</line>
+    <line>223</line>
+    <line>231</line>
+    <line>235</line>
+    <line>237</line>
+    <line>238</line>
+    <line>242</line>
+    <line>245</line>
+  
+
+    <name>nmap-7.91/nping/ProbeMode.cc</name>
+    <line>1684</line>
+    <line>1712</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>952</line>
+  
+
+    <name>nmap-7.91/nbase/test/test-escape_windows_command_arg.c</name>
+    <line>115</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>1590</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <message>
+    Check to be sure that argument 1 passed to this function call will not
+    copy more data than can be handled, resulting in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>2469</line>
+    <line>2523</line>
+  
+
+    <name>nmap-7.91/portlist.cc</name>
+    <line>200</line>
+    <line>201</line>
+    <line>205</line>
+    <line>213</line>
+    <line>218</line>
+    <line>219</line>
+    <line>223</line>
+    <line>231</line>
+    <line>235</line>
+    <line>237</line>
+    <line>238</line>
+    <line>242</line>
+    <line>245</line>
+  
+
+    <name>nmap-7.91/nping/ProbeMode.cc</name>
+    <line>1684</line>
+    <line>1712</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>952</line>
+  
+
+    <name>nmap-7.91/nbase/test/test-escape_windows_command_arg.c</name>
+    <line>115</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>1590</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>gethostbyname</type>
+  <message>
+    DNS results can easily be forged by an attacker (or 
+arbitrarily set to large values, etc), and should not be trusted.
+  </message>
+
+    <name>nmap-7.91/libpcap/nametoaddr.c</name>
+    <line>165</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/addr.c</name>
+    <line>212</line>
+  
+
+    <name>nmap-7.91/nping/common_modified.cc</name>
+    <line>408</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>639</line>
+  
+
+    <name>nmap-7.91/nbase/getaddrinfo.c</name>
+    <line>176</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>1875</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>fprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-septel.c</name>
+    <line>309</line>
+    <line>316</line>
+  
+
+    <name>nmap-7.91/liblua/liolib.c</name>
+    <line>627</line>
+    <line>629</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>158</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>LoadLibrary</type>
+  <message>
+    LoadLibrary will search several places for a library if
+no path is specified, allowing trojan DLL's to be inserted elsewhere even
+if the intended DLL is correctly protected from overwriting. Make sure to specify the full path.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-tc.c</name>
+    <line>296</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>getopt</type>
+  <message>
+    Truncate all input strings to a reasonable length 
+before passing them to this function
+  </message>
+
+    <name>nmap-7.91/libpcap/missing/getopt.c</name>
+    <line>59</line>
+  
+
+    <name>nmap-7.91/nbase/getopt.c</name>
+    <line>288</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>gethostbyname</type>
+  <message>
+    DNS results can easily be forged by an attacker (or arbitrarily se
+t to large values, etc), and should not be trusted.
+  </message>
+
+    <name>nmap-7.91/ncat/test/ncat-test.pl</name>
+    <line>819</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>connect</type>
+  <message>
+    The second argument specifiying the packed address to bind
+                     to, should not be derived from user input. If the address
+                     is derived from user input, it is possible for a malicious
+                     user to cause the socket to connect to an arbitrary remote 
+                     address, enabling hijacking of potentially sensitive 
+                     network data.
+  </message>
+
+    <name>nmap-7.91/ncat/test/ncat-test.pl</name>
+    <line>820</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>getopt_long</type>
+  <message>
+    Truncate all input strings to a reasonable length 
+before passing them to this function
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_main.c</name>
+    <line>317</line>
+  
+
+    <name>nmap-7.91/nbase/getopt.c</name>
+    <line>294</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>CreateProcess</type>
+  <message>
+    Many program execution commands under Windows will search
+the path for a program if you do not explicitly specify a full path to the This can allow trojans to be executed instead.  Also, be sure to
+specify extension, since otherwise multiple extensions will be tried
+by the operating system, providing another opportunity for trojans.
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_exec_win.c</name>
+    <line>252</line>
+  
+
+    <name>nmap-7.91/nselib/data/psexec/nmap_service.c</name>
+    <line>154</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>CreateProcess</type>
+  <message>
+    Argument 3 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_exec_win.c</name>
+    <line>252</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>system</type>
+  <message>
+    Argument 1 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>nmap-7.91/liblua/loslib.c</name>
+    <line>143</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-solaris.c</name>
+    <line>77</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>sprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>nmap-7.91/liblua/luac.c</name>
+    <line>268</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>511</line>
+    <line>517</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>compile</type>
+  <message>
+    Argument 1 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>nmap-7.91/ndiff/test-scans/anonymize.py</name>
+    <line>64</line>
+    <line>65</line>
+    <line>66</line>
+  
+
+    <name>nmap-7.91/zenmap/setup.py</name>
+    <line>402</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/ScriptArgsParser.py</name>
+    <line>66</line>
+    <line>68</line>
+    <line>70</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/ScriptMetadata.py</name>
+    <line>353</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>ShellExecute</type>
+  <message>
+    Many program execution commands under Windows will search
+the path for a program if you do not explicitly specify a full path to the This can allow trojans to be executed instead.  Also, be sure to
+specify extension, since otherwise multiple extensions will be tried
+by the operating system, providing another opportunity for trojans.
+  </message>
+
+    <name>nmap-7.91/nping/winfix.cc</name>
+    <line>151</line>
+  
+
+    <name>nmap-7.91/mswin32/winfix.cc</name>
+    <line>153</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>scanf</type>
+  <message>
+    Check to be sure that the format string passed as argument 2 to this
+    function call does not come from an untrusted source that could have added
+    formatting characters that the code is not prepared to handle.
+    Additionally, the format string could contain `%s' without precision that
+    could result in a buffer overflow.
+  </message>
+
+    <name>nmap-7.91/libz/contrib/minizip/miniunz.c</name>
+    <line>390</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/minizip.c</name>
+    <line>352</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>gethostbyaddr</type>
+  <message>
+    DNS results can easily be forged by an attacker (or 
+arbitrarily set to large values, etc), and should not be trusted.
+  </message>
+
+    <name>nmap-7.91/nbase/getnameinfo.c</name>
+    <line>102</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>crypt</type>
+  <message>
+    Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/transport.c</name>
+    <line>142</line>
+    <line>879</line>
+  
+
+    <name>nmap-7.91/libssh2/src/pem.c</name>
+    <line>258</line>
+    <line>584</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>realloc</type>
+  <message>
+    Don't use on memory intended to be secure, because the old structure will not be zeroed out.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/wincng.c</name>
+    <line>1898</line>
+    <line>2100</line>
+  
+
+    <name>nmap-7.91/libssh2/src/session.c</name>
+    <line>85</line>
+  
+
+    <name>nmap-7.91/liblinear/predict.c</name>
+    <line>33</line>
+    <line>97</line>
+  
+
+    <name>nmap-7.91/liblinear/linear.cpp</name>
+    <line>1796</line>
+    <line>1797</line>
+  
+
+    <name>nmap-7.91/liblinear/train.c</name>
+    <line>65</line>
+    <line>181</line>
+    <line>182</line>
+  
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>3715</line>
+  
+
+    <name>nmap-7.91/libpcap/scanner.c</name>
+    <line>5338</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>213</line>
+    <line>706</line>
+    <line>730</line>
+  
+
+    <name>nmap-7.91/libpcap/sf-pcapng.c</name>
+    <line>339</line>
+    <line>683</line>
+  
+
+    <name>nmap-7.91/libpcap/sf-pcap.c</name>
+    <line>426</line>
+  
+
+    <name>nmap-7.91/libpcap/missing/snprintf.c</name>
+    <line>107</line>
+    <line>594</line>
+  
+
+    <name>nmap-7.91/liblua/lauxlib.c</name>
+    <line>1015</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf-win32.c</name>
+    <line>98</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/rand.c</name>
+    <line>182</line>
+  
+
+    <name>nmap-7.91/libz/contrib/testzlib/testzlib.c</name>
+    <line>226</line>
+  
+
+    <name>nmap-7.91/libz/contrib/puff/pufftest.c</name>
+    <line>76</line>
+  
+
+    <name>nmap-7.91/libz/test/infcover.c</name>
+    <line>271</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_memalloc.c</name>
+    <line>101</line>
+  
+
+    <name>nmap-7.91/nbase/test/test-escape_windows_command_arg.c</name>
+    <line>111</line>
+  
+
+    <name>nmap-7.91/string_pool.cc</name>
+    <line>123</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>EVP_EncryptUpdate</type>
+  <message>
+    make sure the output buffer is either at least one block less one byte bigger
+than the input, or that you are sure inputs are always multiples of the block
+size, and the output buffer is as big as the input.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/openssl.c</name>
+    <line>530</line>
+  
+
+    <name>nmap-7.91/nping/Crypto.cc</name>
+    <line>147</line>
+  
+
+    <name>nmap-7.91/nse_openssl.cc</name>
+    <line>451</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>getc</type>
+  <message>
+    Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+  </message>
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>4639</line>
+    <line>4643</line>
+    <line>4646</line>
+    <line>4653</line>
+  
+
+    <name>nmap-7.91/libpcap/etherent.c</name>
+    <line>62</line>
+    <line>74</line>
+    <line>110</line>
+    <line>116</line>
+    <line>123</line>
+    <line>156</line>
+  
+
+    <name>nmap-7.91/liblua/liolib.c</name>
+    <line>475</line>
+  
+
+    <name>nmap-7.91/liblua/lauxlib.c</name>
+    <line>674</line>
+    <line>679</line>
+    <line>694</line>
+    <line>696</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_addrset.c</name>
+    <line>743</line>
+    <line>752</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>read</type>
+  <message>
+    Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+  </message>
+
+    <name>nmap-7.91/NewTargets.cc</name>
+    <line>121</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_core.c</name>
+    <line>624</line>
+    <line>637</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snit.c</name>
+    <line>129</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-usb-linux.c</name>
+    <line>845</line>
+    <line>1063</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-nit.c</name>
+    <line>113</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>985</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-pf.c</name>
+    <line>115</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dlpi.c</name>
+    <line>1867</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snoop.c</name>
+    <line>87</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-enet.c</name>
+    <line>66</line>
+  
+
+    <name>nmap-7.91/ncat/sys_wrap.c</name>
+    <line>131</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_listen.c</name>
+    <line>538</line>
+    <line>987</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_posix.c</name>
+    <line>230</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/rand.c</name>
+    <line>84</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>396</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-bsd.c</name>
+    <line>151</line>
+    <line>612</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-bsd.c</name>
+    <line>85</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-bsd.c</name>
+    <line>130</line>
+  
+
+    <name>nmap-7.91/libz/gzread.c</name>
+    <line>35</line>
+  
+
+    <name>nmap-7.91/targets.cc</name>
+    <line>332</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_rnd.c</name>
+    <line>162</line>
+  
+
+    <name>nmap-7.91/nse_libssh2.cc</name>
+    <line>254</line>
+  
+
+    <name>nmap-7.91/nmap_tty.cc</name>
+    <line>153</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>signal</type>
+  <message>
+    When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+    foSee also:
+ http://razor.bindview.com/publish/papers/signals.txt
+  </message>
+
+    <name>nmap-7.91/nsock/src/nsock_pool.c</name>
+    <line>304</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dos.c</name>
+    <line>759</line>
+    <line>760</line>
+    <line>761</line>
+  
+
+    <name>nmap-7.91/ncat/sys_wrap.c</name>
+    <line>154</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_exec_win.c</name>
+    <line>619</line>
+  
+
+    <name>nmap-7.91/liblua/lua.c</name>
+    <line>125</line>
+    <line>204</line>
+    <line>206</line>
+  
+
+    <name>nmap-7.91/nping/EchoServer.cc</name>
+    <line>192</line>
+  
+
+    <name>nmap-7.91/nping/nping.cc</name>
+    <line>127</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>1947</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>ERR_error_string</type>
+  <message>
+    Use ERR_error_string_n() instead
+  </message>
+
+    <name>nmap-7.91/nsock/src/nsock_core.c</name>
+    <line>376</line>
+    <line>384</line>
+    <line>391</line>
+    <line>447</line>
+    <line>489</line>
+    <line>499</line>
+    <line>728</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_ssl.c</name>
+    <line>94</line>
+    <line>144</line>
+    <line>179</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_ssl.c</name>
+    <line>124</line>
+    <line>126</line>
+    <line>133</line>
+    <line>137</line>
+    <line>148</line>
+    <line>156</line>
+    <line>158</line>
+    <line>165</line>
+    <line>167</line>
+    <line>179</line>
+    <line>181</line>
+    <line>481</line>
+    <line>634</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_win.c</name>
+    <line>112</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_posix.c</name>
+    <line>368</line>
+  
+
+    <name>nmap-7.91/ncat/test/test-wildcard.c</name>
+    <line>112</line>
+    <line>125</line>
+    <line>225</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_proxy.c</name>
+    <line>305</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_core.c</name>
+    <line>314</line>
+    <line>382</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>161</line>
+    <line>176</line>
+    <line>178</line>
+    <line>185</line>
+    <line>190</line>
+    <line>208</line>
+  
+
+    <name>nmap-7.91/nping/Crypto.cc</name>
+    <line>191</line>
+  
+
+    <name>nmap-7.91/nse_ssl_cert.cc</name>
+    <line>566</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>srand</type>
+  <message>
+    Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+  </message>
+
+    <name>nmap-7.91/nsock/tests/timer.c</name>
+    <line>71</line>
+  
+
+    <name>nmap-7.91/nse_main.cc</name>
+    <line>799</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.
+    The following line(s) contain uses that may match up with this check:
+    2724 (fopen)
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>3115</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>OPENSSL_free</type>
+  <message>
+    Does the memory need to be cleaned before freeing?
+  </message>
+
+    <name>nmap-7.91/nse_openssl.cc</name>
+    <line>225</line>
+    <line>234</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>EVP_DecryptUpdate</type>
+  <message>
+    make sure the output buffer is either at least one block less one byte bigger
+than the input, or that you are sure inputs are always multiples of the block
+size, and the output buffer is as big as the input.
+  </message>
+
+    <name>nmap-7.91/nse_openssl.cc</name>
+    <line>510</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.
+    The following line(s) contain uses that may match up with this check:
+    286 (open)    , 292 (chmod)
+  </message>
+
+    <name>nmap-7.91/zenmap/setup.py</name>
+    <line>291</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>signal</type>
+  <message>
+    When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+    foSee also:
+ http://razor.bindview.com/publish/papers/signals.txt
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapGUI/App.py</name>
+    <line>203</line>
+    <line>204</line>
+    <line>205</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapGUI/ScanInterface.py</name>
+    <line>581</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/nbase/nbase_misc.c</name>
+    <line>749</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>2507</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>2509</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>getchar</type>
+  <message>
+    Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+  </message>
+
+    <name>nmap-7.91/libz/contrib/blast/blast.c</name>
+    <line>458</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/libz/contrib/minizip/minizip.c</name>
+    <line>122</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>fgetc</type>
+  <message>
+    Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+  </message>
+
+    <name>nmap-7.91/libpcap/msdos/bin2c.c</name>
+    <line>34</line>
+  
+
+    <name>nmap-7.91/payload.cc</name>
+    <line>135</line>
+    <line>144</line>
+    <line>154</line>
+    <line>161</line>
+    <line>177</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>unlink</type>
+  <message>
+    When using this function, it is important to be sure that the string being passed in does not contain relative path elements (../ for example), or a null, which may cause underlying C calls to behave in ways you do not expect. This is especially important if the string is in any way constructed from a user supplied value.
+  </message>
+
+    <name>nmap-7.91/ncat/test/ncat-test.pl</name>
+    <line>713</line>
+    <line>730</line>
+    <line>1682</line>
+    <line>1683</line>
+    <line>1697</line>
+    <line>1698</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>bind</type>
+  <message>
+    The second argument specifiying the packed address to bind 
+                   to, should not be derived from user input. If the address
+                   is derived from user input, it is possible for a malicious
+                   user to cause the socket to be bound to an address of their
+                   choice.
+  </message>
+
+    <name>nmap-7.91/ncat/test/ncat-test.pl</name>
+    <line>775</line>
+    <line>1618</line>
+    <line>1639</line>
+    <line>1660</line>
+    <line>1686</line>
+    <line>2930</line>
+    <line>3073</line>
+    <line>3112</line>
+    <line>3144</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>open</type>
+  <message>
+    Thame argument of open should be carefully checked if it is being created with any user-supplied string as a compontent of it. Strings should be checked for occurences of path backtracking/relative path components (../ as an example), or nulls, which may cause the underlying C call to interpret thame to open differently than expected. It is also important to make sure that the finaame does not end in a "|", as this will cause the path to be executed.
+  </message>
+
+    <name>nmap-7.91/ncat/test/ncat-test.pl</name>
+    <line>865</line>
+    <line>870</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>fcntl</type>
+  <message>
+    Thandle argument should not be derived from 
+                   user input. Doing so could allow arbitrarandles
+                   to have operations carried out on them.
+  </message>
+
+    <name>nmap-7.91/ncat/test/ncat-test.pl</name>
+    <line>3086</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>tempnam</type>
+  <message>
+    Many calls for generating temporarnames are 
+insecure (susceptible to race conditions).  Use a securely generatename, for example, by pulling 64 bits of randomness from /dev/random, base 
+64 encoding it and using that as suffix.
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>1004</line>
+  
+</vulnerability>
+
+<vulnerability>
+  <severity>Medium</severity>
+  <type>t</type>
+  <message>
+    Many calls for generating temporarnames are 
+insecure (susceptible to race conditions).  Use a securely generatename, for example, by pulling 64 bits of randomness from /dev/random, base 
+64 encoding it and using that as suffix.
+  </message>
+
+    <name>nmap-7.91/liblua/liolib.c</name>
+    <line>288</line>
+</vulnerability>
+
+<vulnerability>
+  <severity>Medium</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.
+    The following line(s) contain uses that may match up with this check:
+    225 (open)    , 231 (chmod)
+  </message>
+
+    <name>nmap-7.91/ndiff/setup.py</name>
+    <line>230</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>seed</type>
+  <message>
+    Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive randomness a crytographic randomness generator that provides sufficient entropy should be used.
+  </message>
+
+    <name>nmap-7.91/ndiff/test-scans/anonymize.py</name>
+    <line>28</line>
+    <line>34</line>
+    <line>40</line>
+    <line>55</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>randrange</type>
+  <message>
+    Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive randomness a crytographic randomness generator that provides sufficient entropy should be used.
+  </message>
+
+    <name>nmap-7.91/ndiff/test-scans/anonymize.py</name>
+    <line>29</line>
+    <line>35</line>
+    <line>42</line>
+    <line>43</line>
+    <line>56</line>
+    <line>58</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>EVP_DecryptUpdate</type>
+  <message>
+    make sure the output buffer is either at least one block less one byte bigger
+than the input, or that you are sure inputs are always multiples of the block
+size, and the output buffer is as big as the input.
+  </message>
+
+    <name>nmap-7.91/nping/Crypto.cc</name>
+    <line>186</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>setstate</type>
+  <message>
+    Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+  </message>
+
+    <name>nmap-7.91/libz/contrib/iostream3/zfstream.cc</name>
+    <line>402</line>
+    <line>413</line>
+    <line>423</line>
+    <line>457</line>
+    <line>468</line>
+    <line>478</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>1350</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-dlpi.c</name>
+    <line>1754</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>snprintf</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/transport.c</name>
+    <line>75</line>
+    <line>85</line>
+  
+
+    <name>nmap-7.91/libssh2/src/knownhost.c</name>
+    <line>373</line>
+    <line>1114</line>
+    <line>1117</line>
+    <line>1120</line>
+    <line>1123</line>
+    <line>1136</line>
+    <line>1139</line>
+    <line>1142</line>
+    <line>1145</line>
+  
+
+    <name>nmap-7.91/libssh2/src/kex.c</name>
+    <line>304</line>
+    <line>333</line>
+    <line>995</line>
+    <line>1024</line>
+    <line>2102</line>
+    <line>2131</line>
+    <line>2727</line>
+    <line>2756</line>
+  
+
+    <name>nmap-7.91/libssh2/src/agent.c</name>
+    <line>305</line>
+  
+
+    <name>nmap-7.91/libssh2/src/misc.c</name>
+    <line>377</line>
+    <line>382</line>
+    <line>388</line>
+    <line>472</line>
+  
+
+    <name>nmap-7.91/libssh2/src/scp.c</name>
+    <line>297</line>
+    <line>855</line>
+    <line>947</line>
+    <line>1017</line>
+  
+
+    <name>nmap-7.91/libssh2/src/channel.c</name>
+    <line>1190</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_core.c</name>
+    <line>576</line>
+    <line>579</line>
+    <line>605</line>
+    <line>608</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>220</line>
+    <line>269</line>
+    <line>784</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf-win32.c</name>
+    <line>146</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-linux.c</name>
+    <line>281</line>
+    <line>285</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-solaris.c</name>
+    <line>72</line>
+    <line>74</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-dlpi.c</name>
+    <line>154</line>
+    <line>163</line>
+    <line>165</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-bsd.c</name>
+    <line>49</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-bsd.c</name>
+    <line>54</line>
+  
+
+    <name>nmap-7.91/nping/ProbeMode.cc</name>
+    <line>1681</line>
+    <line>1709</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>125</line>
+    <line>133</line>
+  
+
+    <name>nmap-7.91/libz/gzlib.c</name>
+    <line>214</line>
+    <line>296</line>
+    <line>611</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>522</line>
+    <line>526</line>
+  
+
+    <name>nmap-7.91/libz/test/minigzip.c</name>
+    <line>471</line>
+    <line>511</line>
+    <line>524</line>
+    <line>566</line>
+  
+
+    <name>nmap-7.91/osscan2.cc</name>
+    <line>3359</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_misc.c</name>
+    <line>680</line>
+    <line>685</line>
+  
+
+    <name>nmap-7.91/nbase/snprintf.c</name>
+    <line>485</line>
+  
+
+    <name>nmap-7.91/nse_libssh2.cc</name>
+    <line>422</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>memcpy</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/transport.c</name>
+    <line>151</line>
+    <line>426</line>
+    <line>431</line>
+    <line>487</line>
+    <line>570</line>
+    <line>808</line>
+    <line>810</line>
+  
+
+    <name>nmap-7.91/libssh2/src/knownhost.c</name>
+    <line>169</line>
+    <line>203</line>
+    <line>228</line>
+    <line>240</line>
+    <line>649</line>
+    <line>698</line>
+    <line>715</line>
+  
+
+    <name>nmap-7.91/libssh2/src/wincng.c</name>
+    <line>507</line>
+    <line>534</line>
+    <line>890</line>
+    <line>894</line>
+    <line>896</line>
+    <line>902</line>
+    <line>904</line>
+    <line>908</line>
+    <line>910</line>
+    <line>914</line>
+    <line>916</line>
+    <line>920</line>
+    <line>922</line>
+    <line>926</line>
+    <line>928</line>
+    <line>932</line>
+    <line>934</line>
+    <line>1120</line>
+    <line>1213</line>
+    <line>1215</line>
+    <line>1218</line>
+    <line>1220</line>
+    <line>1224</line>
+    <line>1226</line>
+    <line>1230</line>
+    <line>1232</line>
+    <line>1238</line>
+    <line>1240</line>
+    <line>1410</line>
+    <line>1422</line>
+    <line>1469</line>
+    <line>1505</line>
+    <line>1534</line>
+    <line>1732</line>
+    <line>1757</line>
+    <line>1829</line>
+    <line>1977</line>
+    <line>1980</line>
+    <line>1996</line>
+    <line>2086</line>
+    <line>2112</line>
+  
+
+    <name>nmap-7.91/libssh2/src/packet.c</name>
+    <line>168</line>
+    <line>321</line>
+    <line>841</line>
+    <line>861</line>
+  
+
+    <name>nmap-7.91/libssh2/src/openssl.c</name>
+    <line>431</line>
+    <line>500</line>
+    <line>700</line>
+    <line>812</line>
+    <line>856</line>
+    <line>1201</line>
+    <line>1247</line>
+    <line>1520</line>
+    <line>1528</line>
+    <line>1640</line>
+    <line>1641</line>
+    <line>1687</line>
+    <line>1968</line>
+    <line>2263</line>
+    <line>2265</line>
+    <line>2267</line>
+    <line>2572</line>
+  
+
+    <name>nmap-7.91/libssh2/src/kex.c</name>
+    <line>578</line>
+    <line>1271</line>
+    <line>2079</line>
+    <line>2308</line>
+    <line>2704</line>
+    <line>2917</line>
+    <line>3381</line>
+    <line>4274</line>
+    <line>4283</line>
+  
+
+    <name>nmap-7.91/libssh2/src/libgcrypt.c</name>
+    <line>417</line>
+    <line>441</line>
+    <line>477</line>
+    <line>499</line>
+  
+
+    <name>nmap-7.91/libssh2/src/mbedtls.c</name>
+    <line>161</line>
+    <line>432</line>
+    <line>545</line>
+    <line>583</line>
+    <line>665</line>
+  
+
+    <name>nmap-7.91/libssh2/src/sftp.c</name>
+    <line>1295</line>
+    <line>1393</line>
+    <line>1681</line>
+    <line>1796</line>
+    <line>1825</line>
+    <line>3705</line>
+  
+
+    <name>nmap-7.91/libssh2/src/userauth.c</name>
+    <line>506</line>
+    <line>1135</line>
+    <line>1294</line>
+    <line>1793</line>
+    <line>1833</line>
+    <line>1943</line>
+  
+
+    <name>nmap-7.91/libssh2/src/agent.c</name>
+    <line>345</line>
+    <line>485</line>
+    <line>584</line>
+    <line>616</line>
+    <line>844</line>
+  
+
+    <name>nmap-7.91/libssh2/src/mac.c</name>
+    <line>246</line>
+    <line>318</line>
+  
+
+    <name>nmap-7.91/libssh2/src/misc.c</name>
+    <line>78</line>
+    <line>243</line>
+    <line>801</line>
+  
+
+    <name>nmap-7.91/libssh2/src/publickey.c</name>
+    <line>384</line>
+    <line>646</line>
+    <line>652</line>
+    <line>658</line>
+    <line>662</line>
+    <line>670</line>
+    <line>674</line>
+    <line>682</line>
+    <line>686</line>
+    <line>765</line>
+    <line>769</line>
+    <line>773</line>
+    <line>842</line>
+  
+
+    <name>nmap-7.91/libssh2/src/pem.c</name>
+    <line>87</line>
+    <line>149</line>
+    <line>182</line>
+    <line>325</line>
+    <line>566</line>
+    <line>567</line>
+    <line>629</line>
+    <line>696</line>
+    <line>772</line>
+  
+
+    <name>nmap-7.91/libssh2/src/session.c</name>
+    <line>181</line>
+    <line>217</line>
+    <line>221</line>
+    <line>441</line>
+    <line>757</line>
+    <line>1297</line>
+  
+
+    <name>nmap-7.91/libssh2/src/channel.c</name>
+    <line>177</line>
+    <line>565</line>
+    <line>1178</line>
+    <line>1582</line>
+    <line>1933</line>
+  
+
+    <name>nmap-7.91/libssh2/src/bcrypt_pbkdf.c</name>
+    <line>127</line>
+    <line>147</line>
+  
+
+    <name>nmap-7.91/libssh2/os400/os400sys.c</name>
+    <line>95</line>
+    <line>161</line>
+  
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>401</line>
+    <line>490</line>
+    <line>492</line>
+    <line>511</line>
+    <line>628</line>
+    <line>816</line>
+    <line>1493</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_get.c</name>
+    <line>246</line>
+    <line>335</line>
+    <line>403</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_study.c</name>
+    <line>576</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_compile.c</name>
+    <line>2789</line>
+    <line>3408</line>
+    <line>3433</line>
+    <line>3526</line>
+    <line>3675</line>
+    <line>3700</line>
+    <line>3730</line>
+    <line>3917</line>
+    <line>3983</line>
+    <line>4552</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_exec.c</name>
+    <line>1029</line>
+    <line>1058</line>
+    <line>1244</line>
+    <line>4888</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_dfa_exec.c</name>
+    <line>428</line>
+  
+
+    <name>nmap-7.91/nse_nmaplib.cc</name>
+    <line>837</line>
+  
+
+    <name>nmap-7.91/traceroute.cc</name>
+    <line>600</line>
+    <line>601</line>
+  
+
+    <name>nmap-7.91/liblinear/linear.cpp</name>
+    <line>19</line>
+  
+
+    <name>nmap-7.91/liblinear/tron.cpp</name>
+    <line>92</line>
+    <line>128</line>
+  
+
+    <name>nmap-7.91/libnetutil/ICMPv6RRBody.cc</name>
+    <line>110</line>
+  
+
+    <name>nmap-7.91/libnetutil/HopByHopHeader.cc</name>
+    <line>112</line>
+    <line>124</line>
+    <line>357</line>
+  
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>383</line>
+    <line>506</line>
+    <line>524</line>
+    <line>530</line>
+    <line>531</line>
+    <line>668</line>
+    <line>673</line>
+    <line>1121</line>
+    <line>1171</line>
+    <line>1172</line>
+    <line>1186</line>
+    <line>1187</line>
+    <line>1272</line>
+    <line>1335</line>
+    <line>3003</line>
+    <line>3006</line>
+    <line>3061</line>
+    <line>3311</line>
+    <line>3504</line>
+    <line>3609</line>
+    <line>3624</line>
+    <line>3659</line>
+    <line>3727</line>
+    <line>4335</line>
+    <line>4337</line>
+    <line>4389</line>
+    <line>4395</line>
+    <line>4458</line>
+  
+
+    <name>nmap-7.91/libnetutil/RoutingHeader.cc</name>
+    <line>111</line>
+    <line>131</line>
+    <line>145</line>
+    <line>163</line>
+    <line>307</line>
+  
+
+    <name>nmap-7.91/libnetutil/EthernetHeader.cc</name>
+    <line>112</line>
+    <line>182</line>
+    <line>200</line>
+  
+
+    <name>nmap-7.91/libnetutil/RawData.cc</name>
+    <line>153</line>
+    <line>162</line>
+  
+
+    <name>nmap-7.91/libnetutil/FragmentHeader.cc</name>
+    <line>112</line>
+  
+
+    <name>nmap-7.91/libnetutil/IPv4Header.cc</name>
+    <line>120</line>
+    <line>607</line>
+  
+
+    <name>nmap-7.91/libnetutil/UDPHeader.cc</name>
+    <line>115</line>
+  
+
+    <name>nmap-7.91/libnetutil/ICMPv6Header.cc</name>
+    <line>127</line>
+    <line>396</line>
+    <line>397</line>
+    <line>775</line>
+    <line>779</line>
+    <line>783</line>
+    <line>800</line>
+    <line>804</line>
+    <line>808</line>
+    <line>818</line>
+    <line>835</line>
+    <line>1057</line>
+    <line>1079</line>
+    <line>1099</line>
+  
+
+    <name>nmap-7.91/libnetutil/TransportLayerElement.cc</name>
+    <line>106</line>
+    <line>107</line>
+    <line>116</line>
+    <line>117</line>
+  
+
+    <name>nmap-7.91/libnetutil/IPv6Header.cc</name>
+    <line>117</line>
+    <line>442</line>
+    <line>448</line>
+    <line>463</line>
+    <line>474</line>
+    <line>480</line>
+    <line>496</line>
+  
+
+    <name>nmap-7.91/libnetutil/TCPHeader.cc</name>
+    <line>123</line>
+    <line>244</line>
+    <line>294</line>
+    <line>295</line>
+    <line>309</line>
+    <line>310</line>
+    <line>800</line>
+  
+
+    <name>nmap-7.91/libnetutil/ICMPv6Option.cc</name>
+    <line>110</line>
+    <line>167</line>
+    <line>260</line>
+  
+
+    <name>nmap-7.91/libnetutil/ICMPv4Header.cc</name>
+    <line>128</line>
+    <line>436</line>
+  
+
+    <name>nmap-7.91/libnetutil/ARPHeader.cc</name>
+    <line>111</line>
+    <line>262</line>
+    <line>276</line>
+    <line>293</line>
+    <line>307</line>
+  
+
+    <name>nmap-7.91/tcpip.cc</name>
+    <line>548</line>
+    <line>601</line>
+    <line>623</line>
+    <line>672</line>
+    <line>676</line>
+    <line>807</line>
+    <line>922</line>
+    <line>925</line>
+    <line>1035</line>
+    <line>1079</line>
+    <line>1144</line>
+    <line>1551</line>
+    <line>1693</line>
+    <line>1817</line>
+    <line>1822</line>
+  
+
+    <name>nmap-7.91/portlist.cc</name>
+    <line>298</line>
+  
+
+    <name>nmap-7.91/nsock/src/engine_iocp.c</name>
+    <line>781</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_pcap.c</name>
+    <line>428</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_iod.c</name>
+    <line>395</line>
+    <line>412</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_write.c</name>
+    <line>97</line>
+    <line>101</line>
+    <line>108</line>
+    <line>109</line>
+    <line>146</line>
+    <line>147</line>
+    <line>221</line>
+    <line>222</line>
+  
+
+    <name>nmap-7.91/nsock/srpace.c</name>
+    <line>103</line>
+    <line>112</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_core.c</name>
+    <line>651</line>
+    <line>1378</line>
+    <line>1379</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_connect.c</name>
+    <line>209</line>
+    <line>261</line>
+    <line>610</line>
+    <line>626</line>
+  
+
+    <name>nmap-7.91/lpeg.c</name>
+    <line>2317</line>
+    <line>2561</line>
+    <line>2578</line>
+    <line>2579</line>
+    <line>2649</line>
+    <line>2664</line>
+    <line>2707</line>
+    <line>2708</line>
+    <line>2997</line>
+    <line>3394</line>
+    <line>3416</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>1965</line>
+    <line>1978</line>
+    <line>4899</line>
+    <line>5177</line>
+    <line>5214</line>
+    <line>6260</line>
+    <line>6352</line>
+    <line>6363</line>
+    <line>6374</line>
+    <line>6392</line>
+    <line>6419</line>
+    <line>6432</line>
+    <line>6444</line>
+    <line>6469</line>
+    <line>7195</line>
+  
+
+    <name>nmap-7.91/libpcap/dlpisubs.c</name>
+    <line>163</line>
+  
+
+    <name>nmap-7.91/libpcap/fad-glifc.c</name>
+    <line>214</line>
+    <line>241</line>
+    <line>276</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap.c</name>
+    <line>407</line>
+    <line>614</line>
+    <line>1523</line>
+    <line>1661</line>
+    <line>2774</line>
+    <line>3582</line>
+    <line>3586</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>601</line>
+    <line>614</line>
+    <line>732</line>
+    <line>755</line>
+    <line>939</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-npf.c</name>
+    <line>183</line>
+    <line>360</line>
+    <line>1978</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bt-linux.c</name>
+    <line>356</line>
+    <line>359</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-rdmasniff.c</name>
+    <line>184</line>
+  
+
+    <name>nmap-7.91/libpcap/sf-pcapng.c</name>
+    <line>351</line>
+    <line>518</line>
+    <line>575</line>
+    <line>789</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dag.c</name>
+    <line>614</line>
+  
+
+    <name>nmap-7.91/libpcap/nametoaddr.c</name>
+    <line>750</line>
+    <line>773</line>
+    <line>793</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-rpcap.c</name>
+    <line>304</line>
+    <line>335</line>
+    <line>2759</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>2718</line>
+    <line>2719</line>
+  
+
+    <name>nmap-7.91/libpcap/sf-pcap.c</name>
+    <line>173</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-pf.c</name>
+    <line>170</line>
+  
+
+    <name>nmap-7.91/libpcap/sockutils.c</name>
+    <line>920</line>
+    <line>1622</line>
+    <line>1624</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-netfilter-linux.c</name>
+    <line>346</line>
+  
+
+    <name>nmap-7.91/libpcap/fad-gifc.c</name>
+    <line>286</line>
+    <line>316</line>
+    <line>355</line>
+  
+
+    <name>nmap-7.91/libpcap/msdos/pktdrvr.c</name>
+    <line>378</line>
+    <line>458</line>
+    <line>463</line>
+    <line>592</line>
+    <line>629</line>
+    <line>663</line>
+    <line>666</line>
+    <line>685</line>
+    <line>688</line>
+    <line>739</line>
+    <line>763</line>
+    <line>909</line>
+    <line>1155</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bt-monitor-linux.c</name>
+    <line>134</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dos.c</name>
+    <line>427</line>
+    <line>879</line>
+    <line>1028</line>
+  
+
+    <name>nmap-7.91/libpcap/optimize.c</name>
+    <line>1399</line>
+    <line>2536</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-tc.c</name>
+    <line>292</line>
+    <line>294</line>
+    <line>1019</line>
+    <line>1025</line>
+  
+
+    <name>nmap-7.91/xml.cc</name>
+    <line>195</line>
+    <line>254</line>
+  
+
+    <name>nmap-7.91/utils.cc</name>
+    <line>198</line>
+    <line>199</line>
+    <line>200</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_listen.c</name>
+    <line>1173</line>
+  
+
+    <name>nmap-7.91/ncat/util.c</name>
+    <line>222</line>
+    <line>302</line>
+    <line>529</line>
+    <line>533</line>
+    <line>711</line>
+    <line>714</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_core.c</name>
+    <line>198</line>
+  
+
+    <name>nmap-7.91/ncat/http.c</name>
+    <line>104</line>
+    <line>156</line>
+    <line>188</line>
+    <line>192</line>
+    <line>911</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>754</line>
+    <line>758</line>
+    <line>816</line>
+    <line>834</line>
+    <line>841</line>
+  
+
+    <name>nmap-7.91/liblua/ltablib.c</name>
+    <line>263</line>
+    <line>264</line>
+  
+
+    <name>nmap-7.91/liblua/lauxlib.c</name>
+    <line>519</line>
+    <line>531</line>
+  
+
+    <name>nmap-7.91/liblua/lstrlib.c</name>
+    <line>135</line>
+    <line>137</line>
+    <line>141</line>
+    <line>996</line>
+  
+
+    <name>nmap-7.91/liblua/lzio.c</name>
+    <line>60</line>
+  
+
+    <name>nmap-7.91/liblua/loslib.c</name>
+    <line>268</line>
+  
+
+    <name>nmap-7.91/liblua/lvm.c</name>
+    <line>464</line>
+  
+
+    <name>nmap-7.91/liblua/lstring.c</name>
+    <line>187</line>
+    <line>207</line>
+  
+
+    <name>nmap-7.91/liblua/lstate.c</name>
+    <line>276</line>
+  
+
+    <name>nmap-7.91/liblua/lobject.c</name>
+    <line>491</line>
+    <line>499</line>
+    <line>503</line>
+    <line>519</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>358</line>
+    <line>661</line>
+    <line>726</line>
+    <line>741</line>
+    <line>755</line>
+    <line>850</line>
+    <line>852</line>
+    <line>861</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf-win32.c</name>
+    <line>166</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-linux.c</name>
+    <line>82</line>
+    <line>105</line>
+    <line>161</line>
+    <line>163</line>
+    <line>201</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-hpux.c</name>
+    <line>58</line>
+    <line>82</line>
+    <line>106</line>
+    <line>122</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/blob.c</name>
+    <line>111</line>
+    <line>122</line>
+    <line>135</line>
+    <line>147</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-win32.c</name>
+    <line>46</line>
+    <line>83</line>
+    <line>129</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-win32.c</name>
+    <line>136</line>
+    <line>150</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-ndd.c</name>
+    <line>100</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/rand.c</name>
+    <line>194</line>
+    <line>195</line>
+    <line>196</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-dlpi.c</name>
+    <line>241</line>
+    <line>242</line>
+    <line>245</line>
+    <line>246</line>
+    <line>284</line>
+    <line>300</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-linux.c</name>
+    <line>102</line>
+    <line>113</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>118</line>
+    <line>327</line>
+    <line>378</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-bsd.c</name>
+    <line>214</line>
+    <line>227</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-bsd.c</name>
+    <line>73</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-snoop.c</name>
+    <line>74</line>
+    <line>86</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/ip-cooked.c</name>
+    <line>62</line>
+    <line>63</line>
+    <line>163</line>
+    <line>171</line>
+    <line>194</line>
+    <line>201</line>
+    <line>218</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-pfilt.c</name>
+    <line>56</line>
+    <line>66</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-bsd.c</name>
+    <line>135</line>
+    <line>157</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/addr.c</name>
+    <line>96</line>
+    <line>137</line>
+    <line>213</line>
+    <line>264</line>
+    <line>272</line>
+    <line>282</line>
+    <line>317</line>
+    <line>330</line>
+    <line>337</line>
+    <line>344</line>
+  
+
+    <name>nmap-7.91/nping/Crypto.cc</name>
+    <line>116</line>
+    <line>276</line>
+  
+
+    <name>nmap-7.91/nping/EchoServer.cc</name>
+    <line>1345</line>
+    <line>1349</line>
+  
+
+    <name>nmap-7.91/nping/NpingTarget.cc</name>
+    <line>181</line>
+    <line>194</line>
+    <line>256</line>
+    <line>268</line>
+    <line>279</line>
+    <line>292</line>
+    <line>402</line>
+    <line>413</line>
+    <line>423</line>
+    <line>441</line>
+    <line>460</line>
+    <line>821</line>
+  
+
+    <name>nmap-7.91/nping/EchoHeader.cc</name>
+    <line>119</line>
+    <line>349</line>
+    <line>362</line>
+    <line>375</line>
+    <line>379</line>
+    <line>411</line>
+    <line>415</line>
+    <line>447</line>
+    <line>452</line>
+    <line>468</line>
+    <line>473</line>
+    <line>488</line>
+    <line>492</line>
+    <line>506</line>
+    <line>510</line>
+    <line>694</line>
+    <line>701</line>
+    <line>734</line>
+    <line>743</line>
+    <line>787</line>
+    <line>939</line>
+    <line>962</line>
+    <line>966</line>
+  
+
+    <name>nmap-7.91/nping/ProbeMode.cc</name>
+    <line>1296</line>
+  
+
+    <name>nmap-7.91/nping/ArgParser.cc</name>
+    <line>409</line>
+    <line>784</line>
+    <line>822</line>
+    <line>1289</line>
+    <line>1290</line>
+  
+
+    <name>nmap-7.91/nping/NpingTargets.cc</name>
+    <line>164</line>
+  
+
+    <name>nmap-7.91/nping/EchoClient.cc</name>
+    <line>828</line>
+    <line>839</line>
+    <line>847</line>
+    <line>917</line>
+  
+
+    <name>nmap-7.91/nping/common_modified.cc</name>
+    <line>272</line>
+    <line>411</line>
+    <line>515</line>
+    <line>766</line>
+  
+
+    <name>nmap-7.91/nping/NEPContext.cc</name>
+    <line>152</line>
+    <line>174</line>
+    <line>258</line>
+    <line>262</line>
+    <line>268</line>
+    <line>295</line>
+    <line>307</line>
+    <line>342</line>
+    <line>387</line>
+    <line>422</line>
+    <line>474</line>
+    <line>487</line>
+    <line>513</line>
+  
+
+    <name>nmap-7.91/nping/NpingOps.cc</name>
+    <line>1343</line>
+    <line>1920</line>
+    <line>1941</line>
+    <line>2091</line>
+    <line>2112</line>
+    <line>2796</line>
+    <line>2799</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>184</line>
+    <line>542</line>
+    <line>563</line>
+    <line>801</line>
+    <line>1217</line>
+    <line>1223</line>
+    <line>1593</line>
+    <line>1596</line>
+    <line>1597</line>
+    <line>1811</line>
+    <line>1813</line>
+    <line>1815</line>
+    <line>1833</line>
+    <line>1835</line>
+    <line>1837</line>
+    <line>1839</line>
+    <line>1841</line>
+    <line>1918</line>
+    <line>1939</line>
+  
+
+    <name>nmap-7.91/scan_engine_raw.cc</name>
+    <line>1064</line>
+    <line>1065</line>
+    <line>1076</line>
+    <line>1088</line>
+    <line>1091</line>
+    <line>1257</line>
+    <line>1258</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/zip.c</name>
+    <line>1980</line>
+    <line>1994</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>213</line>
+    <line>444</line>
+    <line>543</line>
+  
+
+    <name>nmap-7.91/libz/gzread.c</name>
+    <line>161</line>
+    <line>325</line>
+    <line>591</line>
+  
+
+    <name>nmap-7.91/osscan2.cc</name>
+    <line>825</line>
+    <line>867</line>
+    <line>1195</line>
+    <line>1196</line>
+    <line>3229</line>
+    <line>3347</line>
+    <line>3374</line>
+    <line>3380</line>
+  
+
+    <name>nmap-7.91/nbase/inet_pton.c</name>
+    <line>147</line>
+    <line>244</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_str.c</name>
+    <line>153</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_misc.c</name>
+    <line>694</line>
+    <line>769</line>
+  
+
+    <name>nmap-7.91/service_scan.cc</name>
+    <line>378</line>
+    <line>636</line>
+    <line>711</line>
+    <line>889</line>
+    <line>909</line>
+    <line>1121</line>
+    <line>1143</line>
+    <line>1632</line>
+    <line>1900</line>
+  
+
+    <name>nmap-7.91/osscan.cc</name>
+    <line>508</line>
+    <line>523</line>
+    <line>531</line>
+    <line>909</line>
+    <line>1013</line>
+  
+
+    <name>nmap-7.91/nse_dnet.cc</name>
+    <line>290</line>
+    <line>291</line>
+  
+
+    <name>nmap-7.91/nse_ssl_cert.cc</name>
+    <line>167</line>
+    <line>279</line>
+  
+
+    <name>nmap-7.91/NmapOps.cc</name>
+    <line>153</line>
+    <line>171</line>
+    <line>613</line>
+  
+
+    <name>nmap-7.91/FPEngine.cc</name>
+    <line>2498</line>
+    <line>2499</line>
+    <line>2714</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>808</line>
+    <line>1876</line>
+    <line>2377</line>
+    <line>2386</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>709</line>
+    <line>796</line>
+  
+
+    <name>nmap-7.91/nse_nsock.cc</name>
+    <line>881</line>
+  
+
+    <name>nmap-7.91/Target.cc</name>
+    <line>215</line>
+    <line>235</line>
+    <line>274</line>
+    <line>288</line>
+    <line>381</line>
+    <line>407</line>
+    <line>464</line>
+    <line>471</line>
+    <line>478</line>
+  
+
+    <name>nmap-7.91/portreasons.cc</name>
+    <line>495</line>
+  
+
+    <name>nmap-7.91/NmapOutputTable.cc</name>
+    <line>142</line>
+    <line>230</line>
+    <line>242</line>
+  
+
+    <name>nmap-7.91/TargetGroup.cc</name>
+    <line>674</line>
+  
+
+    <name>nmap-7.91/timing.cc</name>
+    <line>188</line>
+    <line>201</line>
+    <line>203</line>
+  
+
+    <name>nmap-7.91/idle_scan.cc</name>
+    <line>436</line>
+    <line>461</line>
+    <line>616</line>
+    <line>617</line>
+    <line>1024</line>
+    <line>1025</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>strlen</type>
+  <message>
+    This function does not properly handle non-NULL terminated
+strings.  This does not result in exploitable code, but can lead to access 
+violations.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/knownhost.c</name>
+    <line>142</line>
+    <line>181</line>
+    <line>196</line>
+    <line>433</line>
+    <line>969</line>
+    <line>1078</line>
+  
+
+    <name>nmap-7.91/libssh2/src/blowfish.c</name>
+    <line>685</line>
+  
+
+    <name>nmap-7.91/libssh2/src/packet.c</name>
+    <line>124</line>
+    <line>1092</line>
+  
+
+    <name>nmap-7.91/libssh2/src/openssl.c</name>
+    <line>288</line>
+    <line>694</line>
+    <line>3022</line>
+    <line>3022</line>
+  
+
+    <name>nmap-7.91/libssh2/src/kex.c</name>
+    <line>427</line>
+    <line>432</line>
+    <line>446</line>
+    <line>451</line>
+    <line>1117</line>
+    <line>1122</line>
+    <line>1136</line>
+    <line>1141</line>
+    <line>3356</line>
+    <line>3380</line>
+    <line>3613</line>
+    <line>3639</line>
+    <line>3676</line>
+    <line>3716</line>
+    <line>3753</line>
+    <line>3795</line>
+    <line>3821</line>
+    <line>3850</line>
+    <line>3874</line>
+    <line>3903</line>
+    <line>3928</line>
+    <line>4208</line>
+    <line>4278</line>
+    <line>4283</line>
+    <line>4299</line>
+  
+
+    <name>nmap-7.91/libssh2/src/mbedtls.c</name>
+    <line>436</line>
+    <line>669</line>
+  
+
+    <name>nmap-7.91/libssh2/src/sftp.c</name>
+    <line>823</line>
+  
+
+    <name>nmap-7.91/libssh2/src/userauth.c</name>
+    <line>756</line>
+    <line>1615</line>
+  
+
+    <name>nmap-7.91/libssh2/src/agent.c</name>
+    <line>325</line>
+    <line>782</line>
+    <line>841</line>
+  
+
+    <name>nmap-7.91/libssh2/src/misc.c</name>
+    <line>75</line>
+    <line>350</line>
+    <line>400</line>
+    <line>763</line>
+    <line>764</line>
+  
+
+    <name>nmap-7.91/libssh2/src/scp.c</name>
+    <line>301</line>
+    <line>859</line>
+  
+
+    <name>nmap-7.91/libssh2/src/pem.c</name>
+    <line>54</line>
+    <line>61</line>
+    <line>134</line>
+    <line>147</line>
+    <line>149</line>
+    <line>176</line>
+    <line>219</line>
+    <line>229</line>
+    <line>319</line>
+    <line>400</line>
+    <line>406</line>
+    <line>412</line>
+    <line>439</line>
+    <line>492</line>
+    <line>533</line>
+    <line>690</line>
+    <line>766</line>
+  
+
+    <name>nmap-7.91/libssh2/src/session.c</name>
+    <line>211</line>
+    <line>425</line>
+    <line>1132</line>
+    <line>1135</line>
+    <line>1291</line>
+  
+
+    <name>nmap-7.91/libssh2/src/channel.c</name>
+    <line>386</line>
+    <line>387</line>
+    <line>472</line>
+    <line>640</line>
+    <line>1136</line>
+    <line>1138</line>
+    <line>1575</line>
+  
+
+    <name>nmap-7.91/libssh2/os400/os400sys.c</name>
+    <line>191</line>
+    <line>209</line>
+  
+
+    <name>nmap-7.91/libssh2/vms/man2help.c</name>
+    <line>71</line>
+    <line>112</line>
+  
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>1023</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_compile.c</name>
+    <line>5995</line>
+  
+
+    <name>nmap-7.91/libpcre/pcre_dfa_exec.c</name>
+    <line>474</line>
+  
+
+    <name>nmap-7.91/libpcre/pcreposix.c</name>
+    <line>172</line>
+    <line>176</line>
+    <line>301</line>
+  
+
+    <name>nmap-7.91/main.cc</name>
+    <line>146</line>
+    <line>146</line>
+  
+
+    <name>nmap-7.91/nse_fs.cc</name>
+    <line>229</line>
+  
+
+    <name>nmap-7.91/liblinear/predict.c</name>
+    <line>34</line>
+  
+
+    <name>nmap-7.91/liblinear/train.c</name>
+    <line>66</line>
+  
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>1105</line>
+    <line>1106</line>
+    <line>1112</line>
+    <line>1113</line>
+    <line>1124</line>
+    <line>1125</line>
+    <line>1136</line>
+    <line>1137</line>
+    <line>1146</line>
+    <line>1147</line>
+    <line>1164</line>
+    <line>1165</line>
+    <line>1168</line>
+    <line>1169</line>
+    <line>1174</line>
+    <line>1175</line>
+    <line>1191</line>
+    <line>1192</line>
+    <line>2469</line>
+    <line>2523</line>
+  
+
+    <name>nmap-7.91/libnetutil/RawData.cc</name>
+    <line>172</line>
+  
+
+    <name>nmap-7.91/libnetutil/TCPHeader.cc</name>
+    <line>228</line>
+    <line>229</line>
+    <line>235</line>
+    <line>236</line>
+    <line>247</line>
+    <line>248</line>
+    <line>259</line>
+    <line>260</line>
+    <line>269</line>
+    <line>270</line>
+    <line>287</line>
+    <line>288</line>
+    <line>291</line>
+    <line>292</line>
+    <line>297</line>
+    <line>298</line>
+    <line>314</line>
+    <line>315</line>
+  
+
+    <name>nmap-7.91/NewTargets.cc</name>
+    <line>163</line>
+  
+
+    <name>nmap-7.91/portlist.cc</name>
+    <line>199</line>
+    <line>206</line>
+    <line>217</line>
+    <line>224</line>
+    <line>236</line>
+    <line>243</line>
+    <line>295</line>
+    <line>522</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_proxy.c</name>
+    <line>355</line>
+  
+
+    <name>nmap-7.91/nsock/src/nsock_write.c</name>
+    <line>105</line>
+    <line>143</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>1538</line>
+  
+
+    <name>nmap-7.91/libpcap/scanner.c</name>
+    <line>4938</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap.c</name>
+    <line>656</line>
+    <line>1853</line>
+    <line>2620</line>
+    <line>2621</line>
+    <line>2621</line>
+    <line>2624</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-new.c</name>
+    <line>89</line>
+    <line>194</line>
+    <line>213</line>
+    <line>250</line>
+    <line>254</line>
+    <line>371</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>90</line>
+    <line>90</line>
+    <line>278</line>
+    <line>295</line>
+    <line>437</line>
+    <line>481</line>
+    <line>512</line>
+    <line>519</line>
+    <line>706</line>
+    <line>853</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-npf.c</name>
+    <line>449</line>
+    <line>1840</line>
+    <line>1841</line>
+    <line>1923</line>
+    <line>1960</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-usb-linux.c</name>
+    <line>292</line>
+    <line>363</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-rdmasniff.c</name>
+    <line>375</line>
+    <line>390</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dag.c</name>
+    <line>758</line>
+    <line>767</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dbus.c</name>
+    <line>290</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-rpcap.c</name>
+    <line>1859</line>
+    <line>1869</line>
+    <line>1912</line>
+    <line>1921</line>
+    <line>2255</line>
+    <line>2257</line>
+    <line>2900</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>1832</line>
+    <line>2608</line>
+  
+
+    <name>nmap-7.91/libpcap/fmtutils.c</name>
+    <line>72</line>
+    <line>166</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dlpi.c</name>
+    <line>881</line>
+  
+
+    <name>nmap-7.91/libpcap/sockutils.c</name>
+    <line>443</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-netfilter-linux.c</name>
+    <line>497</line>
+    <line>498</line>
+    <line>501</line>
+    <line>502</line>
+  
+
+    <name>nmap-7.91/libpcap/gencode.c</name>
+    <line>658</line>
+    <line>8359</line>
+    <line>8364</line>
+    <line>8387</line>
+    <line>8394</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snf.c</name>
+    <line>536</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-tc.c</name>
+    <line>508</line>
+    <line>515</line>
+  
+
+    <name>nmap-7.91/libpcap/rpcap-protocol.c</name>
+    <line>87</line>
+  
+
+    <name>nmap-7.91/libpcap/missing/strlcat.c</name>
+    <line>50</line>
+  
+
+    <name>nmap-7.91/libpcap/missing/snprintf.c</name>
+    <line>228</line>
+  
+
+    <name>nmap-7.91/xml.cc</name>
+    <line>189</line>
+    <line>248</line>
+  
+
+    <name>nmap-7.91/utils.cc</name>
+    <line>136</line>
+    <line>452</line>
+    <line>463</line>
+    <line>470</line>
+    <line>473</line>
+    <line>488</line>
+    <line>493</line>
+    <line>497</line>
+    <line>515</line>
+    <line>519</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_ssl.c</name>
+    <line>222</line>
+    <line>227</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_win.c</name>
+    <line>102</line>
+  
+
+    <name>nmap-7.91/ncat/util.c</name>
+    <line>232</line>
+    <line>738</line>
+    <line>742</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_posix.c</name>
+    <line>289</line>
+  
+
+    <name>nmap-7.91/ncat/http_digest.c</name>
+    <line>155</line>
+    <line>177</line>
+    <line>179</line>
+    <line>181</line>
+    <line>187</line>
+    <line>189</line>
+    <line>195</line>
+    <line>197</line>
+    <line>200</line>
+    <line>202</line>
+    <line>204</line>
+    <line>207</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_proxy.c</name>
+    <line>84</line>
+    <line>807</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_main.c</name>
+    <line>874</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_core.c</name>
+    <line>520</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_exec_win.c</name>
+    <line>173</line>
+    <line>173</line>
+    <line>324</line>
+    <line>324</line>
+  
+
+    <name>nmap-7.91/ncat/http.c</name>
+    <line>1085</line>
+    <line>1087</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>336</line>
+    <line>579</line>
+    <line>585</line>
+    <line>597</line>
+    <line>603</line>
+    <line>724</line>
+    <line>808</line>
+  
+
+    <name>nmap-7.91/liblua/liolib.c</name>
+    <line>43</line>
+  
+
+    <name>nmap-7.91/liblua/lauxlib.c</name>
+    <line>401</line>
+    <line>538</line>
+    <line>765</line>
+    <line>861</line>
+    <line>994</line>
+  
+
+    <name>nmap-7.91/liblua/lstrlib.c</name>
+    <line>585</line>
+    <line>1007</line>
+    <line>1008</line>
+    <line>1070</line>
+    <line>1400</line>
+    <line>1524</line>
+  
+
+    <name>nmap-7.91/liblua/ldblib.c</name>
+    <line>409</line>
+  
+
+    <name>nmap-7.91/liblua/lvm.c</name>
+    <line>258</line>
+  
+
+    <name>nmap-7.91/liblua/lundump.c</name>
+    <line>221</line>
+  
+
+    <name>nmap-7.91/liblua/lstring.c</name>
+    <line>231</line>
+  
+
+    <name>nmap-7.91/liblua/lua.c</name>
+    <line>213</line>
+    <line>251</line>
+    <line>316</line>
+    <line>335</line>
+  
+
+    <name>nmap-7.91/liblua/lobject.c</name>
+    <line>284</line>
+    <line>410</line>
+    <line>462</line>
+    <line>488</line>
+  
+
+    <name>nmap-7.91/liblua/loadlib.c</name>
+    <line>429</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/strlcat.c</name>
+    <line>62</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf-win32.c</name>
+    <line>279</line>
+    <line>582</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/blob.c</name>
+    <line>404</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-dlpi.c</name>
+    <line>107</line>
+    <line>122</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/addr.c</name>
+    <line>152</line>
+    <line>159</line>
+    <line>241</line>
+  
+
+    <name>nmap-7.91/nping/ProbeMode.cc</name>
+    <line>726</line>
+    <line>1343</line>
+    <line>1349</line>
+    <line>1353</line>
+    <line>1399</line>
+    <line>1405</line>
+    <line>1446</line>
+    <line>1448</line>
+    <line>1451</line>
+    <line>1458</line>
+    <line>1459</line>
+  
+
+    <name>nmap-7.91/nping/ArgParser.cc</name>
+    <line>392</line>
+    <line>395</line>
+    <line>420</line>
+    <line>435</line>
+    <line>443</line>
+    <line>812</line>
+    <line>819</line>
+    <line>1008</line>
+    <line>1269</line>
+    <line>1272</line>
+  
+
+    <name>nmap-7.91/nping/utils.cc</name>
+    <line>151</line>
+    <line>162</line>
+    <line>169</line>
+    <line>172</line>
+    <line>187</line>
+    <line>192</line>
+    <line>196</line>
+  
+
+    <name>nmap-7.91/nping/NEPContext.cc</name>
+    <line>257</line>
+    <line>295</line>
+    <line>296</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>784</line>
+    <line>841</line>
+    <line>845</line>
+    <line>952</line>
+    <line>1509</line>
+    <line>1509</line>
+    <line>1537</line>
+    <line>1582</line>
+    <line>1706</line>
+    <line>1728</line>
+    <line>1801</line>
+  
+
+    <name>nmap-7.91/nse_main.cc</name>
+    <line>286</line>
+  
+
+    <name>nmap-7.91/libz/gzlib.c</name>
+    <line>199</line>
+    <line>605</line>
+    <line>605</line>
+    <line>611</line>
+    <line>611</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream3/zfstream.cc</name>
+    <line>160</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/zip.c</name>
+    <line>962</line>
+    <line>1101</line>
+    <line>1103</line>
+    <line>1870</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/miniunz.c</name>
+    <line>143</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/mztools.c</name>
+    <line>151</line>
+    <line>226</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/unzip.c</name>
+    <line>1249</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/minizip.c</name>
+    <line>111</line>
+    <line>328</line>
+    <line>396</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>138</line>
+    <line>332</line>
+    <line>514</line>
+  
+
+    <name>nmap-7.91/libz/gzwrite.c</name>
+    <line>370</line>
+    <line>426</line>
+    <line>524</line>
+  
+
+    <name>nmap-7.91/libz/test/minigzip.c</name>
+    <line>465</line>
+    <line>465</line>
+    <line>503</line>
+    <line>505</line>
+  
+
+    <name>nmap-7.91/libz/test/infcover.c</name>
+    <line>250</line>
+    <line>525</line>
+  
+
+    <name>nmap-7.91/libz/test/example.c</name>
+    <line>93</line>
+    <line>123</line>
+    <line>180</line>
+    <line>206</line>
+    <line>381</line>
+    <line>480</line>
+  
+
+    <name>nmap-7.91/osscan2.cc</name>
+    <line>3351</line>
+    <line>3360</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_str.c</name>
+    <line>84</line>
+    <line>282</line>
+  
+
+    <name>nmap-7.91/nbase/getopt.c</name>
+    <line>228</line>
+  
+
+    <name>nmap-7.91/nbase/strcasecmp.c</name>
+    <line>77</line>
+    <line>78</line>
+    <line>80</line>
+    <line>82</line>
+    <line>100</line>
+    <line>101</line>
+    <line>103</line>
+    <line>105</line>
+  
+
+    <name>nmap-7.91/nbase/test/test-escape_windows_command_arg.c</name>
+    <line>109</line>
+    <line>110</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_misc.c</name>
+    <line>271</line>
+    <line>740</line>
+  
+
+    <name>nmap-7.91/nbase/inet_ntop.c</name>
+    <line>229</line>
+  
+
+    <name>nmap-7.91/nbase/snprintf.c</name>
+    <line>250</line>
+  
+
+    <name>nmap-7.91/service_scan.cc</name>
+    <line>282</line>
+    <line>283</line>
+    <line>672</line>
+    <line>904</line>
+    <line>1657</line>
+  
+
+    <name>nmap-7.91/nselib/data/psexec/nmap_service.c</name>
+    <line>74</line>
+    <line>78</line>
+    <line>88</line>
+    <line>178</line>
+    <line>184</line>
+  
+
+    <name>nmap-7.91/osscan.cc</name>
+    <line>504</line>
+    <line>520</line>
+    <line>528</line>
+    <line>720</line>
+    <line>904</line>
+  
+
+    <name>nmap-7.91/nse_dnet.cc</name>
+    <line>307</line>
+  
+
+    <name>nmap-7.91/NmapOps.cc</name>
+    <line>206</line>
+  
+
+    <name>nmap-7.91/nmap_ftp.cc</name>
+    <line>153</line>
+    <line>173</line>
+    <line>241</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>816</line>
+    <line>911</line>
+    <line>1702</line>
+    <line>2384</line>
+    <line>2386</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>151</line>
+    <line>871</line>
+    <line>924</line>
+    <line>932</line>
+    <line>1583</line>
+    <line>1585</line>
+    <line>1712</line>
+  
+
+    <name>nmap-7.91/NmapOutputTable.cc</name>
+    <line>129</line>
+  
+
+    <name>nmap-7.91/TargetGroup.cc</name>
+    <line>181</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fgets</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/knownhost.c</name>
+    <line>968</line>
+  
+
+    <name>nmap-7.91/libssh2/src/pem.c</name>
+    <line>49</line>
+  
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>959</line>
+    <line>985</line>
+  
+
+    <name>nmap-7.91/protocols.cc</name>
+    <line>103</line>
+  
+
+    <name>nmap-7.91/services.cc</name>
+    <line>166</line>
+  
+
+    <name>nmap-7.91/liblinear/predict.c</name>
+    <line>27</line>
+    <line>35</line>
+  
+
+    <name>nmap-7.91/liblinear/train.c</name>
+    <line>59</line>
+    <line>67</line>
+  
+
+    <name>nmap-7.91/MACLookup.cc</name>
+    <line>109</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>1169</line>
+    <line>2613</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>272</line>
+  
+
+    <name>nmap-7.91/ncat/test/addrset.c</name>
+    <line>73</line>
+  
+
+    <name>nmap-7.91/liblua/ldblib.c</name>
+    <line>406</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>778</line>
+    <line>923</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-linux.c</name>
+    <line>236</line>
+    <line>267</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>220</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>1489</line>
+    <line>1683</line>
+  
+
+    <name>nmap-7.91/service_scan.cc</name>
+    <line>1293</line>
+    <line>1316</line>
+  
+
+    <name>nmap-7.91/osscan.cc</name>
+    <line>973</line>
+    <line>1020</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/knownhost.c</name>
+    <line>966</line>
+    <line>1207</line>
+  
+
+    <name>nmap-7.91/libssh2/src/wincng.c</name>
+    <line>558</line>
+  
+
+    <name>nmap-7.91/libssh2/src/openssl.c</name>
+    <line>1070</line>
+    <line>1372</line>
+    <line>1746</line>
+    <line>2451</line>
+    <line>2825</line>
+  
+
+    <name>nmap-7.91/libssh2/src/libgcrypt.c</name>
+    <line>177</line>
+    <line>289</line>
+  
+
+    <name>nmap-7.91/libssh2/src/userauth.c</name>
+    <line>581</line>
+  
+
+    <name>nmap-7.91/libssh2/vms/man2help.c</name>
+    <line>210</line>
+    <line>419</line>
+    <line>421</line>
+  
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>951</line>
+    <line>982</line>
+  
+
+    <name>nmap-7.91/protocols.cc</name>
+    <line>94</line>
+  
+
+    <name>nmap-7.91/libpcre/dftables.c</name>
+    <line>89</line>
+  
+
+    <name>nmap-7.91/services.cc</name>
+    <line>159</line>
+  
+
+    <name>nmap-7.91/liblinear/predict.c</name>
+    <line>189</line>
+    <line>196</line>
+  
+
+    <name>nmap-7.91/liblinear/linear.cpp</name>
+    <line>2173</line>
+    <line>2208</line>
+  
+
+    <name>nmap-7.91/liblinear/train.c</name>
+    <line>245</line>
+  
+
+    <name>nmap-7.91/MACLookup.cc</name>
+    <line>101</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>1165</line>
+    <line>2585</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>268</line>
+  
+
+    <name>nmap-7.91/libpcap/sac</name>
+    <line>280</line>
+  
+
+    <name>nmap-7.91/libpcap/nametoaddr.c</name>
+    <line>737</line>
+  
+
+    <name>nmap-7.91/libpcap/sf-pcap.c</name>
+    <line>825</line>
+    <line>925</line>
+  
+
+    <name>nmap-7.91/libpcap/msdos/bin2c.c</name>
+    <line>25</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_main.c</name>
+    <line>196</line>
+  
+
+    <name>nmap-7.91/payload.cc</name>
+    <line>298</line>
+  
+
+    <name>nmap-7.91/liblua/liolib.c</name>
+    <line>250</line>
+    <line>262</line>
+  
+
+    <name>nmap-7.91/liblua/lauxlib.c</name>
+    <line>715</line>
+  
+
+    <name>nmap-7.91/liblua/luac.c</name>
+    <line>181</line>
+  
+
+    <name>nmap-7.91/liblua/loadlib.c</name>
+    <line>417</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>776</line>
+    <line>911</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-linux.c</name>
+    <line>232</line>
+    <line>262</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>216</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>1486</line>
+    <line>1680</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/ioapi.c</name>
+    <line>109</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/mztools.c</name>
+    <line>38</line>
+    <line>39</line>
+    <line>40</line>
+    <line>257</line>
+  
+
+    <name>nmap-7.91/libz/contrib/testzlib/testzlib.c</name>
+    <line>124</line>
+  
+
+    <name>nmap-7.91/libz/contrib/puff/pufftest.c</name>
+    <line>70</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>482</line>
+    <line>490</line>
+  
+
+    <name>nmap-7.91/libz/trees.c</name>
+    <line>328</line>
+  
+
+    <name>nmap-7.91/libz/test/minigzip.c</name>
+    <line>223</line>
+    <line>477</line>
+    <line>534</line>
+    <line>633</line>
+  
+
+    <name>nmap-7.91/libz/crc32.c</name>
+    <line>143</line>
+  
+
+    <name>nmap-7.91/service_scan.cc</name>
+    <line>1289</line>
+  
+
+    <name>nmap-7.91/osscan.cc</name>
+    <line>968</line>
+  
+
+    <name>nmap-7.91/nse_libssh2.cc</name>
+    <line>534</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>897</line>
+    <line>1067</line>
+    <line>1364</line>
+    <line>1679</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>1097</line>
+    <line>1102</line>
+    <line>1104</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>strncpy</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string. Also, consider using strlcpy() instead, if it is avaialable to you.
+  </message>
+
+    <name>nmap-7.91/libssh2/src/agent.c</name>
+    <line>166</line>
+  
+
+    <name>nmap-7.91/libpcre/pcreposix.c</name>
+    <line>184</line>
+  
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>1612</line>
+    <line>1613</line>
+    <line>1960</line>
+    <line>2957</line>
+  
+
+    <name>nmap-7.91/tcpip.cc</name>
+    <line>1180</line>
+    <line>1256</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snit.c</name>
+    <line>370</line>
+  
+
+    <name>nmap-7.91/libpcap/fad-glifc.c</name>
+    <line>196</line>
+    <line>212</line>
+    <line>239</line>
+    <line>274</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-sita.c</name>
+    <line>522</line>
+    <line>523</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-nit.c</name>
+    <line>206</line>
+    <line>299</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dag.c</name>
+    <line>424</line>
+    <line>1212</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>623</line>
+    <line>830</line>
+    <line>1440</line>
+    <line>1454</line>
+    <line>1997</line>
+    <line>2028</line>
+    <line>2061</line>
+    <line>2759</line>
+    <line>2886</line>
+    <line>2996</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-septel.c</name>
+    <line>287</line>
+  
+
+    <name>nmap-7.91/libpcap/fad-gifc.c</name>
+    <line>268</line>
+    <line>284</line>
+    <line>314</line>
+    <line>353</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snf.c</name>
+    <line>202</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-netmap.c</name>
+    <line>145</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-snoop.c</name>
+    <line>222</line>
+    <line>344</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-tc.c</name>
+    <line>1111</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_main.c</name>
+    <line>797</line>
+    <line>847</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>1009</line>
+  
+
+    <name>nmap-7.91/nping/EchoHeader.cc</name>
+    <line>848</line>
+  
+
+    <name>nmap-7.91/nping/ProbeMode.cc</name>
+    <line>1279</line>
+    <line>1281</line>
+  
+
+    <name>nmap-7.91/nping/NpingTargets.cc</name>
+    <line>168</line>
+  
+
+    <name>nmap-7.91/nping/NEPContext.cc</name>
+    <line>275</line>
+    <line>278</line>
+    <line>281</line>
+    <line>284</line>
+    <line>287</line>
+  
+
+    <name>nmap-7.91/nping/NpingOps.cc</name>
+    <line>2194</line>
+  
+
+    <name>nmap-7.91/nping/utils_net.cc</name>
+    <line>109</line>
+    <line>400</line>
+    <line>487</line>
+    <line>508</line>
+    <line>561</line>
+    <line>653</line>
+    <line>879</line>
+    <line>997</line>
+    <line>1069</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/miniunz.c</name>
+    <line>609</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/minizip.c</name>
+    <line>115</line>
+    <line>324</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>440</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_str.c</name>
+    <line>118</line>
+    <line>307</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_misc.c</name>
+    <line>280</line>
+  
+
+    <name>nmap-7.91/nbase/inet_ntop.c</name>
+    <line>250</line>
+  
+
+    <name>nmap-7.91/nse_pcrelib.cc</name>
+    <line>90</line>
+  
+
+    <name>nmap-7.91/FPEngine.cc</name>
+    <line>2502</line>
+  
+
+    <name>nmap-7.91/nmap_ftp.cc</name>
+    <line>93</line>
+    <line>99</line>
+    <line>110</line>
+  
+
+    <name>nmap-7.91/nmap.cc</name>
+    <line>2374</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>2127</line>
+    <line>2140</line>
+    <line>2153</line>
+    <line>2173</line>
+  
+
+    <name>nmap-7.91/idle_scan.cc</name>
+    <line>542</line>
+    <line>548</line>
+    <line>552</line>
+    <line>1373</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/nmap_dns.cc</name>
+    <line>618</line>
+  
+
+    <name>nmap-7.91/traceroute.cc</name>
+    <line>397</line>
+    <line>399</line>
+  
+
+    <name>nmap-7.91/liblua/loslib.c</name>
+    <line>155</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/mztools.c</name>
+    <line>276</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>539</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/nse_fs.cc</name>
+    <line>121</line>
+  
+
+    <name>nmap-7.91/libz/contrib/minizip/miniunz.c</name>
+    <line>131</line>
+    <line>133</line>
+  
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>341</line>
+    <line>356</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/nse_fs.cc</name>
+    <line>141</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/nse_fs.cc</name>
+    <line>234</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>2468</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-new.c</name>
+    <line>233</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-usb-linux.c</name>
+    <line>297</line>
+    <line>340</line>
+    <line>359</line>
+    <line>509</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>2684</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>Static Global Buffer</type>
+  <message>
+    Extra care should be taken to ensure that character arrays that are
+    allocated with a static size are used safely.  This appears to be a
+    global allocation and is less dangerous than a similar one on the stack.
+    Extra caution is still advised, however.
+  </message>
+
+    <name>nmap-7.91/libnetutil/netutil.cc</name>
+    <line>968</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dag.c</name>
+    <line>202</line>
+  
+
+    <name>nmap-7.91/libpcap/msdos/pktdrvr.c</name>
+    <line>116</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dos.c</name>
+    <line>869</line>
+  
+
+    <name>nmap-7.91/ncat/http_digest.c</name>
+    <line>89</line>
+  
+
+    <name>nmap-7.91/liblua/lopcodes.c</name>
+    <line>20</line>
+  
+
+    <name>nmap-7.91/liblua/ltm.c</name>
+    <line>29</line>
+  
+
+    <name>nmap-7.91/nping/winfix.cc</name>
+    <line>90</line>
+  
+
+    <name>nmap-7.91/libz/zutil.c</name>
+    <line>13</line>
+  
+
+    <name>nmap-7.91/mswin32/winfix.cc</name>
+    <line>92</line>
+  
+
+    <name>nmap-7.91/nbase/test/test-escape_windows_command_arg.c</name>
+    <line>19</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_addrset.c</name>
+    <line>191</line>
+  
+
+    <name>nmap-7.91/output.cc</name>
+    <line>96</line>
+  
+
+    <name>nmap-7.91/charpool.cc</name>
+    <line>73</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-snit.c</name>
+    <line>331</line>
+    <line>333</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-usb-linux.c</name>
+    <line>522</line>
+    <line>642</line>
+    <line>735</line>
+    <line>745</line>
+    <line>1041</line>
+    <line>1051</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>503</line>
+    <line>505</line>
+    <line>540</line>
+    <line>542</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-dlpi.c</name>
+    <line>391</line>
+    <line>439</line>
+    <line>451</line>
+    <line>537</line>
+    <line>1100</line>
+    <line>1826</line>
+  
+
+    <name>nmap-7.91/libpcap/pcap-enet.c</name>
+    <line>158</line>
+  
+
+    <name>nmap-7.91/utils.cc</name>
+    <line>565</line>
+  
+
+    <name>nmap-7.91/ncat/sys_wrap.c</name>
+    <line>120</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_listen.c</name>
+    <line>213</line>
+    <line>672</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-solaris.c</name>
+    <line>51</line>
+    <line>54</line>
+    <line>60</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/rand.c</name>
+    <line>82</line>
+    <line>83</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-dlpi.c</name>
+    <line>145</line>
+    <line>162</line>
+    <line>164</line>
+    <line>166</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>61</line>
+    <line>63</line>
+    <line>449</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-bsd.c</name>
+    <line>196</line>
+    <line>200</line>
+    <line>665</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-bsd.c</name>
+    <line>55</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-bsd.c</name>
+    <line>54</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-linux.c</name>
+    <line>44</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-bsd.c</name>
+    <line>58</line>
+  
+
+    <name>nmap-7.91/libz/gzlib.c</name>
+    <line>245</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream3/test.cc</name>
+    <line>17</line>
+    <line>26</line>
+    <line>33</line>
+    <line>42</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream3/zfstream.cc</name>
+    <line>51</line>
+    <line>384</line>
+    <line>398</line>
+    <line>401</line>
+    <line>439</line>
+    <line>453</line>
+    <line>456</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream/zfstream.cpp</name>
+    <line>18</line>
+    <line>270</line>
+    <line>272</line>
+    <line>300</line>
+    <line>320</line>
+  
+
+    <name>nmap-7.91/libz/contrib/iostream2/zstream_test.cpp</name>
+    <line>19</line>
+  
+
+    <name>nmap-7.91/nbase/nbase_rnd.c</name>
+    <line>157</line>
+    <line>158</line>
+  
+
+    <name>nmap-7.91/nmap_tty.cc</name>
+    <line>227</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>lstat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-linux.c</name>
+    <line>2528</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>wcslen</type>
+  <message>
+    This function does not properly handle non-NULL terminated
+strings.  This does not result in exploitable code, but can lead to access 
+violations.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap.c</name>
+    <line>2107</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>1360</line>
+  
+
+    <name>nmap-7.91/ncat/test/test-wildcard.c</name>
+    <line>227</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_connect.c</name>
+    <line>1001</line>
+    <line>1094</line>
+  
+
+    <name>nmap-7.91/libz/test/minigzip.c</name>
+    <line>489</line>
+    <line>542</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-bpf.c</name>
+    <line>1361</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>_tcslen</type>
+  <message>
+    This function does not properly handle non-NULL terminated
+strings.  This does not result in exploitable code, but can lead to access 
+violations.
+  </message>
+
+    <name>nmap-7.91/libpcap/pcap-tc.c</name>
+    <line>290</line>
+    <line>294</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>X509_digest</type>
+  <message>
+    make sure the buffer is EVP_MAX_MD_SIZE
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_ssl.c</name>
+    <line>579</line>
+  
+
+    <name>nmap-7.91/nse_ssl_cert.cc</name>
+    <line>134</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/ncat/scripts/p0fme.py</name>
+    <line>75</line>
+  
+
+    <name>nmap-7.91/ndiff/setup.py</name>
+    <line>110</line>
+    <line>122</line>
+    <line>241</line>
+    <line>265</line>
+  
+
+    <name>nmap-7.91/ndiff/test-scans/anonymize.py</name>
+    <line>116</line>
+  
+
+    <name>nmap-7.91/ndiff/ndifftest.py</name>
+    <line>328</line>
+  
+
+    <name>nmap-7.91/ndiff/ndiff.py</name>
+    <line>72</line>
+  
+
+    <name>nmap-7.91/zenmap/setup.py</name>
+    <line>303</line>
+    <line>315</line>
+    <line>356</line>
+    <line>368</line>
+    <line>389</line>
+    <line>394</line>
+    <line>399</line>
+    <line>408</line>
+    <line>420</line>
+    <line>444</line>
+  
+
+    <name>nmap-7.91/zenmap/install_scripts/utils/version_update.py</name>
+    <line>79</line>
+    <line>86</line>
+    <line>93</line>
+    <line>97</line>
+  
+
+    <name>nmap-7.91/zenmap/install_scripts/windows/boot_script.py</name>
+    <line>23</line>
+  
+
+    <name>nmap-7.91/zenmap/share/zenmap/locale/xgettext-peditor.py</name>
+    <line>51</line>
+  
+
+    <name>nmap-7.91/zenmap/radialnet/core/XMLHandler.py</name>
+    <line>331</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/NmapParser.py</name>
+    <line>752</line>
+    <line>1046</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/RecentScans.py</name>
+    <line>81</line>
+    <line>91</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/TargetList.py</name>
+    <line>82</line>
+    <line>92</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/Paths.py</name>
+    <line>217</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/UmitConfigParser.py</name>
+    <line>92</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/NetworkInventory.py</name>
+    <line>291</line>
+    <line>357</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/ScriptMetadata.py</name>
+    <line>88</line>
+    <line>300</line>
+    <line>313</line>
+    <line>347</line>
+    <line>363</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/MainWindow.py</name>
+    <line>915</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/OptionBuilder.py</name>
+    <line>405</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/About.py</name>
+    <line>126</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fork</type>
+  <message>
+    Remember that sensitive data get copied on fork.  For example, a random
+      number generator's internal state will get duplicated, and the child
+      may start outputting identical number streams.
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_posix.c</name>
+    <line>77</line>
+    <line>148</line>
+  
+
+    <name>nmap-7.91/ncat/ncat_proxy.c</name>
+    <line>263</line>
+  
+
+    <name>nmap-7.91/nping/winfix.cc</name>
+    <line>302</line>
+  
+
+    <name>nmap-7.91/mswin32/winfix.cc</name>
+    <line>305</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_posix.c</name>
+    <line>174</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_posix.c</name>
+    <line>183</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/ncat/ncat_main.c</name>
+    <line>1045</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>143</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/liblua/lauxlib.c</name>
+    <line>721</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/liblua/loslib.c</name>
+    <line>162</line>
+  
+
+    <name>nmap-7.91/nselib/data/psexec/nmap_service.c</name>
+    <line>351</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/ndiff/setup.py</name>
+    <line>288</line>
+  
+
+    <name>nmap-7.91/ndiff/ndifftest.py</name>
+    <line>761</line>
+  
+
+    <name>nmap-7.91/zenmap/setup.py</name>
+    <line>467</line>
+    <line>574</line>
+  
+
+    <name>nmap-7.91/zenmap/radialnet/bestwidgets/expanders.py</name>
+    <line>89</line>
+  
+
+    <name>nmap-7.91/zenmap/radialnet/bestwidgets/frames.py</name>
+    <line>95</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/NetworkInventory.py</name>
+    <line>144</line>
+    <line>180</line>
+    <line>203</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/NmapCommand.py</name>
+    <line>185</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/Diff.py</name>
+    <line>153</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/ScanInterface.py</name>
+    <line>437</line>
+    <line>457</line>
+    <line>562</line>
+    <line>773</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/ScriptInterface.py</name>
+    <line>270</line>
+    <line>670</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/ScanHostsView.py</name>
+    <line>169</line>
+    <line>240</line>
+    <line>244</line>
+    <line>262</line>
+    <line>265</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/ScanOpenPortsPage.py</name>
+    <line>306</line>
+    <line>315</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/App.py</name>
+    <line>111</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/DiffCompare.py</name>
+    <line>350</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/ndiff/setup.py</name>
+    <line>299</line>
+  
+
+    <name>nmap-7.91/zenmap/setup.py</name>
+    <line>478</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>strlcpy</type>
+  <message>
+    Double check that your buffer is as big as you specify
+  </message>
+
+    <name>nmap-7.91/libdnet-stripped/src/intf.c</name>
+    <line>182</line>
+    <line>195</line>
+    <line>210</line>
+    <line>244</line>
+    <line>280</line>
+    <line>309</line>
+    <line>425</line>
+    <line>495</line>
+    <line>603</line>
+    <line>667</line>
+    <line>674</line>
+    <line>732</line>
+    <line>826</line>
+    <line>931</line>
+    <line>992</line>
+    <line>1005</line>
+    <line>1059</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/intf-win32.c</name>
+    <line>295</line>
+    <line>597</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-linux.c</name>
+    <line>212</line>
+    <line>245</line>
+    <line>279</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-ndd.c</name>
+    <line>47</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-dlpi.c</name>
+    <line>102</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/strlcpy.c</name>
+    <line>43</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-linux.c</name>
+    <line>58</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/arp-ioctl.c</name>
+    <line>91</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-bsd.c</name>
+    <line>182</line>
+    <line>357</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/route-win32.c</name>
+    <line>131</line>
+    <line>183</line>
+    <line>228</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-snoop.c</name>
+    <line>45</line>
+    <line>54</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/ip-cooked.c</name>
+    <line>61</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-pfilt.c</name>
+    <line>40</line>
+    <line>53</line>
+    <line>65</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/eth-bsd.c</name>
+    <line>62</line>
+    <line>71</line>
+    <line>160</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-linux.c</name>
+    <line>54</line>
+  
+
+    <name>nmap-7.91/libdnet-stripped/src/tun-bsd.c</name>
+    <line>55</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>strlcat</type>
+  <message>
+    Double check that your buffer is as big as you specify
+  </message>
+
+    <name>nmap-7.91/libdnet-stripped/src/strlcat.c</name>
+    <line>45</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>MultiByteToWideChar</type>
+  <message>
+    The last argument is the number of wide chars, not the number of bytes.  Getting this wrong can cause a buffer overflow since you will indicate that the buffer is twice the size it actually is.  Don't forget about NULL termination.
+  </message>
+
+    <name>nmap-7.91/libz/contrib/minizip/iowin32.c</name>
+    <line>112</line>
+    <line>137</line>
+    <line>185</line>
+  
+
+    <name>nmap-7.91/nbase/test/test-escape_windows_command_arg.c</name>
+    <line>45</line>
+    <line>51</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/libz/contrib/untgz/untgz.c</name>
+    <line>277</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>WideCharToMultiByte</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>nmap-7.91/nbase/test/test-escape_windows_command_arg.c</name>
+    <line>66</line>
+    <line>72</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>OBJ_obj2txt</type>
+  <message>
+    Double check that your buffer is as big as you specify
+  </message>
+
+    <name>nmap-7.91/nse_ssl_cert.cc</name>
+    <line>164</line>
+    <line>235</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/setup.py</name>
+    <line>326</line>
+    <line>332</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/SearchResult.py</name>
+    <line>482</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/RecentScans.py</name>
+    <line>76</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/RecentScans.py</name>
+    <line>77</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/TargetList.py</name>
+    <line>77</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/TargetList.py</name>
+    <line>78</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/UmitDB.py</name>
+    <line>98</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/UmitDB.py</name>
+    <line>99</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapGUI/MainWindow.py</name>
+    <line>430</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>nmap-7.91/zenmap/zenmapCore/Paths.py</name>
+    <line>198</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/NetworkInventory.py</name>
+    <line>279</line>
+    <line>304</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapCore/ScriptMetadata.py</name>
+    <line>407</line>
+  
+
+    <name>nmap-7.91/zenmap/zenmapGUI/MainWindow.py</name>
+    <line>552</line>
+  
+</vulnerability>
+<timing>
+<total_lines>325875</total_lines>
+<total_time>0.182649</total_time>
+<lines_per_second>1784159</lines_per_second>
+</timing>
+</rats_output>

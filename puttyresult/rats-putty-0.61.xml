@@ -1,0 +1,2743 @@
+<?xml version="1.0"?><rats_output>
+<stats>
+<dbcount lang="perl">33</dbcount>
+<dbcount lang="ruby">46</dbcount>
+<dbcount lang="python">62</dbcount>
+<dbcount lang="c">334</dbcount>
+<dbcount lang="php">55</dbcount>
+</stats>
+<vulnerability>
+  <severity>High</severity>
+  <type>fixed size global buffer</type>
+  <message>
+    Extra care should be taken to ensure that character arrays that are
+    allocated on the stack are used safely.  They are prime targets for
+    buffer overflow attacks.
+  </message>
+
+    <name>putty-0.61/sshdes.c</name>
+    <line>911</line>
+  
+
+    <name>putty-0.61/sshmd5.c</name>
+    <line>172</line>
+    <line>236</line>
+    <line>277</line>
+    <line>288</line>
+    <line>313</line>
+    <line>332</line>
+  
+
+    <name>putty-0.61/settings.c</name>
+    <line>219</line>
+    <line>487</line>
+    <line>499</line>
+    <line>571</line>
+    <line>813</line>
+    <line>839</line>
+    <line>943</line>
+  
+
+    <name>putty-0.61/portfwd.c</name>
+    <line>41</line>
+    <line>88</line>
+    <line>113</line>
+    <line>177</line>
+    <line>202</line>
+  
+
+    <name>putty-0.61/ssharcf.c</name>
+    <line>11</line>
+    <line>34</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/telnet.c</name>
+    <line>208</line>
+    <line>236</line>
+    <line>328</line>
+    <line>543</line>
+    <line>544</line>
+    <line>546</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/sel.c</name>
+    <line>33</line>
+    <line>302</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>64</line>
+  
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>197</line>
+    <line>238</line>
+    <line>239</line>
+    <line>650</line>
+    <line>1167</line>
+    <line>1223</line>
+    <line>1224</line>
+    <line>1246</line>
+  
+
+    <name>putty-0.61/pscp.c</name>
+    <line>521</line>
+    <line>607</line>
+    <line>815</line>
+    <line>853</line>
+    <line>854</line>
+    <line>1013</line>
+    <line>1464</line>
+    <line>1659</line>
+    <line>1673</line>
+    <line>1896</line>
+  
+
+    <name>putty-0.61/dialog.c</name>
+    <line>546</line>
+  
+
+    <name>putty-0.61/proxy.c</name>
+    <line>162</line>
+    <line>269</line>
+    <line>527</line>
+    <line>537</line>
+    <line>538</line>
+    <line>713</line>
+    <line>804</line>
+    <line>870</line>
+    <line>939</line>
+    <line>973</line>
+    <line>1023</line>
+    <line>1080</line>
+    <line>1097</line>
+    <line>1152</line>
+    <line>1337</line>
+    <line>1348</line>
+    <line>1381</line>
+  
+
+    <name>putty-0.61/logging.c</name>
+    <line>86</line>
+    <line>235</line>
+    <line>377</line>
+    <line>379</line>
+  
+
+    <name>putty-0.61/sshzlib.c</name>
+    <line>130</line>
+    <line>133</line>
+    <line>212</line>
+    <line>953</line>
+    <line>954</line>
+    <line>957</line>
+    <line>966</line>
+    <line>1299</line>
+  
+
+    <name>putty-0.61/x11fwd.c</name>
+    <line>26</line>
+    <line>32</line>
+    <line>343</line>
+    <line>449</line>
+    <line>462</line>
+    <line>739</line>
+    <line>743</line>
+  
+
+    <name>putty-0.61/sshdss.c</name>
+    <line>14</line>
+    <line>28</line>
+    <line>177</line>
+    <line>178</line>
+    <line>216</line>
+    <line>376</line>
+    <line>555</line>
+  
+
+    <name>putty-0.61/telnet.c</name>
+    <line>238</line>
+    <line>366</line>
+    <line>470</line>
+    <line>623</line>
+    <line>820</line>
+    <line>821</line>
+    <line>823</line>
+    <line>863</line>
+    <line>899</line>
+  
+
+    <name>putty-0.61/raw.c</name>
+    <line>40</line>
+  
+
+    <name>putty-0.61/cproxy.c</name>
+    <line>28</line>
+    <line>56</line>
+    <line>57</line>
+    <line>163</line>
+  
+
+    <name>putty-0.61/int64.c</name>
+    <line>35</line>
+    <line>139</line>
+  
+
+    <name>putty-0.61/ldisc.c</name>
+    <line>51</line>
+    <line>56</line>
+  
+
+    <name>putty-0.61/sshrand.c</name>
+    <line>37</line>
+    <line>40</line>
+    <line>42</line>
+  
+
+    <name>putty-0.61/sshsh512.c</name>
+    <line>230</line>
+    <line>286</line>
+    <line>291</line>
+  
+
+    <name>putty-0.61/terminal.c</name>
+    <line>2527</line>
+    <line>2764</line>
+    <line>3443</line>
+    <line>3736</line>
+    <line>3926</line>
+    <line>4083</line>
+    <line>5250</line>
+    <line>5303</line>
+    <line>5702</line>
+    <line>5910</line>
+  
+
+    <name>putty-0.61/sshrsa.c</name>
+    <line>104</line>
+    <line>202</line>
+    <line>240</line>
+    <line>364</line>
+    <line>365</line>
+    <line>764</line>
+    <line>765</line>
+    <line>834</line>
+    <line>880</line>
+    <line>960</line>
+  
+
+    <name>putty-0.61/sftp.c</name>
+    <line>68</line>
+    <line>74</line>
+    <line>218</line>
+    <line>227</line>
+    <line>1181</line>
+    <line>1240</line>
+    <line>1250</line>
+    <line>1371</line>
+  
+
+    <name>putty-0.61/rlogin.c</name>
+    <line>49</line>
+    <line>164</line>
+    <line>310</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>82</line>
+    <line>294</line>
+    <line>428</line>
+    <line>529</line>
+    <line>605</line>
+    <line>635</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>524</line>
+    <line>642</line>
+  
+
+    <name>putty-0.61/unix/uxplink.c</name>
+    <line>1037</line>
+    <line>1047</line>
+  
+
+    <name>putty-0.61/unix/gtkfont.c</name>
+    <line>166</line>
+    <line>483</line>
+    <line>1083</line>
+    <line>1596</line>
+    <line>1838</line>
+  
+
+    <name>putty-0.61/unix/uxucs.c</name>
+    <line>71</line>
+    <line>165</line>
+    <line>219</line>
+  
+
+    <name>putty-0.61/unix/gtkdlg.c</name>
+    <line>3735</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>91</line>
+    <line>92</line>
+    <line>509</line>
+    <line>1617</line>
+    <line>3065</line>
+  
+
+    <name>putty-0.61/unix/uxser.c</name>
+    <line>365</line>
+  
+
+    <name>putty-0.61/unix/uxproxy.c</name>
+    <line>197</line>
+  
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>86</line>
+    <line>115</line>
+    <line>205</line>
+    <line>753</line>
+    <line>1113</line>
+  
+
+    <name>putty-0.61/unix/uxcons.c</name>
+    <line>128</line>
+    <line>198</line>
+    <line>252</line>
+  
+
+    <name>putty-0.61/unix/uxnoise.c</name>
+    <line>52</line>
+    <line>119</line>
+  
+
+    <name>putty-0.61/unix/uxagentc.c</name>
+    <line>29</line>
+  
+
+    <name>putty-0.61/import.c</name>
+    <line>315</line>
+    <line>328</line>
+    <line>424</line>
+    <line>538</line>
+    <line>722</line>
+    <line>723</line>
+    <line>894</line>
+    <line>1034</line>
+    <line>1048</line>
+    <line>1137</line>
+    <line>1369</line>
+    <line>1649</line>
+  
+
+    <name>putty-0.61/ssh.c</name>
+    <line>632</line>
+    <line>675</line>
+    <line>783</line>
+    <line>801</line>
+    <line>1376</line>
+    <line>1754</line>
+    <line>1762</line>
+    <line>1805</line>
+    <line>2373</line>
+    <line>2612</line>
+    <line>2899</line>
+    <line>3201</line>
+    <line>3210</line>
+    <line>3212</line>
+    <line>3220</line>
+    <line>3261</line>
+    <line>3310</line>
+    <line>3851</line>
+    <line>4109</line>
+    <line>4201</line>
+    <line>4393</line>
+    <line>5421</line>
+    <line>6213</line>
+    <line>6279</line>
+    <line>7330</line>
+    <line>7338</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>340</line>
+    <line>501</line>
+    <line>543</line>
+    <line>604</line>
+  
+
+    <name>putty-0.61/psftp.c</name>
+    <line>414</line>
+    <line>655</line>
+    <line>694</line>
+  
+
+    <name>putty-0.61/config.c</name>
+    <line>52</line>
+    <line>612</line>
+    <line>621</line>
+    <line>688</line>
+    <line>747</line>
+    <line>799</line>
+    <line>894</line>
+    <line>1008</line>
+  
+
+    <name>putty-0.61/sshsha.c</name>
+    <line>148</line>
+    <line>241</line>
+    <line>286</line>
+    <line>298</line>
+    <line>319</line>
+    <line>327</line>
+    <line>334</line>
+    <line>342</line>
+    <line>349</line>
+    <line>357</line>
+    <line>365</line>
+  
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>340</line>
+    <line>358</line>
+    <line>390</line>
+    <line>791</line>
+    <line>825</line>
+    <line>921</line>
+    <line>2000</line>
+  
+
+    <name>putty-0.61/windows/winhandl.c</name>
+    <line>97</line>
+  
+
+    <name>putty-0.61/windows/winstore.c</name>
+    <line>461</line>
+    <line>564</line>
+    <line>757</line>
+    <line>774</line>
+  
+
+    <name>putty-0.61/windows/windlg.c</name>
+    <line>536</line>
+    <line>705</line>
+  
+
+    <name>putty-0.61/windows/winnoise.c</name>
+    <line>23</line>
+  
+
+    <name>putty-0.61/windows/winucs.c</name>
+    <line>443</line>
+    <line>1122</line>
+    <line>1168</line>
+  
+
+    <name>putty-0.61/windows/winhelp.c</name>
+    <line>28</line>
+  
+
+    <name>putty-0.61/windows/winctrls.c</name>
+    <line>1325</line>
+    <line>1903</line>
+  
+
+    <name>putty-0.61/windows/winplink.c</name>
+    <line>233</line>
+    <line>260</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>218</line>
+    <line>285</line>
+    <line>1080</line>
+    <line>1102</line>
+    <line>1878</line>
+    <line>2050</line>
+    <line>2051</line>
+    <line>2939</line>
+    <line>3033</line>
+    <line>3410</line>
+    <line>3420</line>
+    <line>4483</line>
+    <line>4707</line>
+    <line>5106</line>
+    <line>5123</line>
+    <line>5246</line>
+    <line>5247</line>
+  
+
+    <name>putty-0.61/windows/winnet.c</name>
+    <line>64</line>
+    <line>89</line>
+    <line>217</line>
+    <line>416</line>
+    <line>1373</line>
+  
+
+    <name>putty-0.61/windows/wincons.c</name>
+    <line>107</line>
+    <line>175</line>
+    <line>223</line>
+  
+
+    <name>putty-0.61/windows/winutils.c</name>
+    <line>367</line>
+  
+
+    <name>putty-0.61/windows/winpgen.c</name>
+    <line>468</line>
+    <line>620</line>
+    <line>712</line>
+    <line>776</line>
+    <line>1104</line>
+    <line>1105</line>
+    <line>1106</line>
+    <line>1123</line>
+    <line>1199</line>
+    <line>1234</line>
+    <line>1305</line>
+  
+
+    <name>putty-0.61/windows/winjump.c</name>
+    <line>541</line>
+  
+
+    <name>putty-0.61/sshbn.c</name>
+    <line>1792</line>
+  
+
+    <name>putty-0.61/sshsh256.c</name>
+    <line>147</line>
+    <line>228</line>
+    <line>233</line>
+  
+
+    <name>putty-0.61/sshpubk.c</name>
+    <line>28</line>
+    <line>29</line>
+    <line>161</line>
+    <line>204</line>
+    <line>234</line>
+    <line>279</line>
+    <line>280</line>
+    <line>621</line>
+    <line>728</line>
+    <line>751</line>
+    <line>752</line>
+    <line>786</line>
+    <line>874</line>
+    <line>959</line>
+    <line>1022</line>
+    <line>1052</line>
+    <line>1096</line>
+    <line>1126</line>
+    <line>1176</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>sprintf</type>
+  <message>
+    Check to be sure that the format string passed as argument 2 to this
+    function call does not come from an untrusted source that could have added
+    formatting characters that the code is not prepared to handle.
+    Additionally, the format string could contain `%s' without precision that
+    could result in a buffer overflow.
+  </message>
+
+    <name>putty-0.61/settings.c</name>
+    <line>316</line>
+    <line>504</line>
+  
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>247</line>
+    <line>251</line>
+    <line>1227</line>
+    <line>1228</line>
+    <line>1229</line>
+    <line>1230</line>
+    <line>1231</line>
+    <line>1232</line>
+    <line>1248</line>
+  
+
+    <name>putty-0.61/pscp.c</name>
+    <line>856</line>
+  
+
+    <name>putty-0.61/proxy.c</name>
+    <line>540</line>
+  
+
+    <name>putty-0.61/sshdss.c</name>
+    <line>202</line>
+  
+
+    <name>putty-0.61/sshrsa.c</name>
+    <line>383</line>
+    <line>787</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>848</line>
+  
+
+    <name>putty-0.61/unix/gtkfont.c</name>
+    <line>512</line>
+    <line>518</line>
+    <line>525</line>
+    <line>538</line>
+    <line>544</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>1037</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>503</line>
+    <line>545</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>241</line>
+    <line>251</line>
+    <line>4719</line>
+    <line>4892</line>
+    <line>4897</line>
+    <line>5248</line>
+  
+
+    <name>putty-0.61/windows/winutils.c</name>
+    <line>508</line>
+    <line>538</line>
+  
+
+    <name>putty-0.61/windows/winpgen.c</name>
+    <line>777</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <message>
+    Check to be sure that argument 2 passed to this function call will not
+    copy more data than can be handled, resulting in a buffer overflow.
+  </message>
+
+    <name>putty-0.61/settings.c</name>
+    <line>961</line>
+  
+
+    <name>putty-0.61/portfwd.c</name>
+    <line>417</line>
+    <line>461</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/malloc.c</name>
+    <line>41</line>
+  
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>54</line>
+    <line>964</line>
+    <line>976</line>
+  
+
+    <name>putty-0.61/proxy.c</name>
+    <line>733</line>
+  
+
+    <name>putty-0.61/sshdss.c</name>
+    <line>206</line>
+  
+
+    <name>putty-0.61/sshrsa.c</name>
+    <line>791</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>311</line>
+  
+
+    <name>putty-0.61/unix/gtkfont.c</name>
+    <line>493</line>
+    <line>1897</line>
+    <line>1901</line>
+    <line>1907</line>
+    <line>1913</line>
+    <line>1919</line>
+  
+
+    <name>putty-0.61/unix/gtkdlg.c</name>
+    <line>3584</line>
+    <line>3747</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>3084</line>
+  
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>279</line>
+    <line>662</line>
+  
+
+    <name>putty-0.61/import.c</name>
+    <line>1111</line>
+  
+
+    <name>putty-0.61/ssh.c</name>
+    <line>4116</line>
+    <line>4426</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>140</line>
+    <line>163</line>
+    <line>171</line>
+  
+
+    <name>putty-0.61/config.c</name>
+    <line>359</line>
+    <line>364</line>
+    <line>916</line>
+    <line>1062</line>
+  
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>534</line>
+  
+
+    <name>putty-0.61/windows/winstore.c</name>
+    <line>300</line>
+    <line>678</line>
+    <line>689</line>
+  
+
+    <name>putty-0.61/windows/windlg.c</name>
+    <line>719</line>
+  
+
+    <name>putty-0.61/windows/winhelp.c</name>
+    <line>37</line>
+    <line>43</line>
+    <line>51</line>
+  
+
+    <name>putty-0.61/windows/winctrls.c</name>
+    <line>418</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>4525</line>
+    <line>4534</line>
+    <line>4938</line>
+    <line>4953</line>
+  
+
+    <name>putty-0.61/windows/winnet.c</name>
+    <line>525</line>
+  
+
+    <name>putty-0.61/windows/winpgen.c</name>
+    <line>384</line>
+    <line>395</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>input</type>
+  <message>
+    Argument 1 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>putty-0.61/contrib/kh2reg.py</name>
+    <line>68</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>vfprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/main.c</name>
+    <line>41</line>
+  
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>99</line>
+  
+
+    <name>putty-0.61/pscp.c</name>
+    <line>2199</line>
+  
+
+    <name>putty-0.61/tree234.c</name>
+    <line>1020</line>
+  
+
+    <name>putty-0.61/unix/uxplink.c</name>
+    <line>39</line>
+    <line>56</line>
+    <line>73</line>
+    <line>90</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>2415</line>
+    <line>2426</line>
+  
+
+    <name>putty-0.61/psftp.c</name>
+    <line>2828</line>
+  
+
+    <name>putty-0.61/windows/winplink.c</name>
+    <line>29</line>
+    <line>43</line>
+    <line>57</line>
+    <line>71</line>
+  
+
+    <name>putty-0.61/sshbn.c</name>
+    <line>1775</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>getenv</type>
+  <message>
+    Environment variables are highly untrustable input. They may be of any length, and contain any data. Do not make any assumptions regarding content or length. If at all possible avoid using them, and if it is necessary, sanitize them and truncate them to a reasonable length.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>147</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>842</line>
+    <line>851</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>102</line>
+    <line>105</line>
+    <line>114</line>
+    <line>131</line>
+    <line>146</line>
+  
+
+    <name>putty-0.61/unix/uxplink.c</name>
+    <line>109</line>
+    <line>617</line>
+  
+
+    <name>putty-0.61/unix/uxucs.c</name>
+    <line>132</line>
+    <line>133</line>
+    <line>134</line>
+  
+
+    <name>putty-0.61/unix/uxputty.c</name>
+    <line>123</line>
+  
+
+    <name>putty-0.61/unix/uxcons.c</name>
+    <line>439</line>
+  
+
+    <name>putty-0.61/unix/ux_x11.c</name>
+    <line>24</line>
+    <line>26</line>
+  
+
+    <name>putty-0.61/unix/uxagentc.c</name>
+    <line>20</line>
+    <line>115</line>
+  
+
+    <name>putty-0.61/windows/winplink.c</name>
+    <line>310</line>
+  
+
+    <name>putty-0.61/windows/winmisc.c</name>
+    <line>14</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>system</type>
+  <message>
+    Argument 1 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>1128</line>
+    <line>1250</line>
+  
+
+    <name>putty-0.61/psftp.c</name>
+    <line>1881</line>
+  
+
+    <name>putty-0.61/windows/winutils.c</name>
+    <line>522</line>
+    <line>551</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>vprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 1 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>1137</line>
+    <line>1196</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>sscanf</type>
+  <message>
+    Check to be sure that the format string passed as argument 2 to this
+    function call does not come from an untrusted source that could have added
+    formatting characters that the code is not prepared to handle.
+    Additionally, the format string could contain `%s' without precision that
+    could result in a buffer overflow.
+  </message>
+
+    <name>putty-0.61/pscp.c</name>
+    <line>1466</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <message>
+    Check to be sure that argument 2 passed to this function call will not
+    copy more data than can be handled, resulting in a buffer overflow.
+  </message>
+
+    <name>putty-0.61/terminal.c</name>
+    <line>4089</line>
+  
+
+    <name>putty-0.61/unix/gtkdlg.c</name>
+    <line>3748</line>
+  
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>1802</line>
+  
+
+    <name>putty-0.61/windows/windlg.c</name>
+    <line>720</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>popen</type>
+  <message>
+    Argument 1 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>putty-0.61/icons/mkicon.py</name>
+    <line>896</line>
+    <line>915</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>eval</type>
+  <message>
+    Argument 1 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>putty-0.61/icons/mkicon.py</name>
+    <line>1091</line>
+    <line>1093</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>popen</type>
+  <message>
+    Argument 1 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>putty-0.61/unix/uxprint.c</name>
+    <line>20</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>sprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>1037</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>strncat</type>
+  <message>
+    Consider using strlcat() instead.
+  </message>
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>233</line>
+    <line>235</line>
+    <line>330</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <message>
+    Check to be sure that argument 1 passed to this function call will not
+    copy more data than can be handled, resulting in a buffer overflow.
+  </message>
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>233</line>
+    <line>235</line>
+    <line>330</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>gethostbyname</type>
+  <message>
+    DNS results can easily be forged by an attacker (or 
+arbitrarily set to large values, etc), and should not be trusted.
+  </message>
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>244</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>fprintf</type>
+  <message>
+    Check to be sure that the non-constant format string passed as argument 2 
+    to this function call does not come from an untrusted source that could
+    have added formatting characters that the code is not prepared to handle.
+  </message>
+
+    <name>putty-0.61/unix/uxcons.c</name>
+    <line>142</line>
+    <line>145</line>
+    <line>150</line>
+    <line>153</line>
+    <line>175</line>
+    <line>203</line>
+    <line>207</line>
+    <line>226</line>
+    <line>257</line>
+    <line>261</line>
+  
+
+    <name>putty-0.61/windows/wincons.c</name>
+    <line>119</line>
+    <line>122</line>
+    <line>127</line>
+    <line>130</line>
+    <line>146</line>
+    <line>178</line>
+    <line>182</line>
+    <line>195</line>
+    <line>226</line>
+    <line>230</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>LoadLibrary</type>
+  <message>
+    LoadLibrary will search several places for a library if
+no path is specified, allowing trojan DLL's to be inserted elsewhere even
+if the intended DLL is correctly protected from overwriting. Make sure to specify the full path.
+  </message>
+
+    <name>putty-0.61/windows/wingss.c</name>
+    <line>95</line>
+    <line>152</line>
+  
+
+    <name>putty-0.61/windows/winmisc.c</name>
+    <line>130</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>ShellExecute</type>
+  <message>
+    Many program execution commands under Windows will search
+the path for a program if you do not explicitly specify a full path to the This can allow trojans to be executed instead.  Also, be sure to
+specify extension, since otherwise multiple extensions will be tried
+by the operating system, providing another opportunity for trojans.
+  </message>
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>1736</line>
+    <line>1803</line>
+    <line>1914</line>
+  
+
+    <name>putty-0.61/windows/windlg.c</name>
+    <line>219</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>ShellExecute</type>
+  <message>
+    Argument 3 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>1736</line>
+    <line>1803</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>CreateProcess</type>
+  <message>
+    Many program execution commands under Windows will search
+the path for a program if you do not explicitly specify a full path to the This can allow trojans to be executed instead.  Also, be sure to
+specify extension, since otherwise multiple extensions will be tried
+by the operating system, providing another opportunity for trojans.
+  </message>
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>2108</line>
+  
+
+    <name>putty-0.61/windows/winproxy.c</name>
+    <line>198</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>High</severity>
+  <type>CreateProcess</type>
+  <message>
+    Argument 3 to this function call should be checked to ensure that it does
+    not come from an untrusted source without first verifying that it contains
+    nothing dangerous.
+  </message>
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>2108</line>
+  
+
+    <name>putty-0.61/windows/winproxy.c</name>
+    <line>198</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>read</type>
+  <message>
+    Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+  </message>
+
+    <name>putty-0.61/charset/toucs.c</name>
+    <line>71</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/sel.c</name>
+    <line>373</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>441</line>
+    <line>557</line>
+    <line>637</line>
+  
+
+    <name>putty-0.61/unix/uxgen.c</name>
+    <line>26</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>644</line>
+  
+
+    <name>putty-0.61/unix/uxplink.c</name>
+    <line>1039</line>
+    <line>1051</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>3116</line>
+  
+
+    <name>putty-0.61/unix/uxsftp.c</name>
+    <line>163</line>
+    <line>589</line>
+  
+
+    <name>putty-0.61/unix/uxser.c</name>
+    <line>375</line>
+  
+
+    <name>putty-0.61/unix/uxproxy.c</name>
+    <line>206</line>
+  
+
+    <name>putty-0.61/unix/uxcons.c</name>
+    <line>164</line>
+    <line>217</line>
+    <line>271</line>
+    <line>402</line>
+  
+
+    <name>putty-0.61/unix/uxnoise.c</name>
+    <line>30</line>
+    <line>123</line>
+    <line>128</line>
+  
+
+    <name>putty-0.61/unix/uxagentc.c</name>
+    <line>68</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>signal</type>
+  <message>
+    When setting signal handlers, do not use the same function to handle multiple signals. There exists the possibility a race condition will result if 2 or more different signals are sent to the process at nearly the same time. Also, when writing signal handlers, it is best to do as little as possible in them. The best strategy is to use the signal handler to set a flag, that another part of the program tests and performs the appropriate action(s) when it is set.
+    foSee also:
+ http://razor.bindview.com/publish/papers/signals.txt
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/main.c</name>
+    <line>159</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>realloc</type>
+  <message>
+    Don't use on memory intended to be secure, because the old structure will not be zeroed out.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/malloc.c</name>
+    <line>30</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>537</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>getlogin</type>
+  <message>
+    The results of this call are easy to forge.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>162</line>
+  
+
+    <name>putty-0.61/unix/uxmisc.c</name>
+    <line>81</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>fgetc</type>
+  <message>
+    Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+  </message>
+
+    <name>putty-0.61/cmdline.c</name>
+    <line>325</line>
+  
+
+    <name>putty-0.61/sshpubk.c</name>
+    <line>466</line>
+    <line>470</line>
+    <line>497</line>
+    <line>500</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.
+    The following line(s) contain uses that may match up with this check:
+    300 (open)
+  </message>
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>303</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>access</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.
+    The following line(s) contain uses that may match up with this check:
+    335 (chown)    , 336 (chmod)
+  </message>
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>317</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Medium</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.
+    The following line(s) contain uses that may match up with this check:
+    133 (open)    , 182 (open)    , 199 (open)    , 328 (opendir)    , 428 (mkdir)
+  </message>
+
+    <name>putty-0.61/unix/uxsftp.c</name>
+    <line>304</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>memcpy</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>putty-0.61/sshmd5.c</name>
+    <line>142</line>
+    <line>149</line>
+    <line>163</line>
+  
+
+    <name>putty-0.61/portfwd.c</name>
+    <line>303</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/sel.c</name>
+    <line>71</line>
+    <line>84</line>
+  
+
+    <name>putty-0.61/pscp.c</name>
+    <line>190</line>
+    <line>202</line>
+    <line>230</line>
+    <line>1528</line>
+  
+
+    <name>putty-0.61/proxy.c</name>
+    <line>167</line>
+    <line>743</line>
+    <line>746</line>
+    <line>1160</line>
+    <line>1162</line>
+    <line>1226</line>
+    <line>1318</line>
+    <line>1342</line>
+    <line>1351</line>
+    <line>1359</line>
+    <line>1367</line>
+    <line>1375</line>
+    <line>1386</line>
+    <line>1407</line>
+  
+
+    <name>putty-0.61/logging.c</name>
+    <line>423</line>
+  
+
+    <name>putty-0.61/x11fwd.c</name>
+    <line>319</line>
+    <line>484</line>
+    <line>721</line>
+    <line>724</line>
+    <line>749</line>
+    <line>757</line>
+    <line>758</line>
+  
+
+    <name>putty-0.61/sshdss.c</name>
+    <line>321</line>
+    <line>615</line>
+  
+
+    <name>putty-0.61/sshaes.c</name>
+    <line>1035</line>
+    <line>1047</line>
+    <line>1057</line>
+    <line>1071</line>
+    <line>1081</line>
+    <line>1084</line>
+    <line>1097</line>
+  
+
+    <name>putty-0.61/cproxy.c</name>
+    <line>176</line>
+  
+
+    <name>putty-0.61/int64.c</name>
+    <line>45</line>
+  
+
+    <name>putty-0.61/sshrand.c</name>
+    <line>75</line>
+    <line>88</line>
+    <line>126</line>
+    <line>147</line>
+    <line>163</line>
+    <line>247</line>
+  
+
+    <name>putty-0.61/sshsh512.c</name>
+    <line>196</line>
+    <line>203</line>
+    <line>222</line>
+  
+
+    <name>putty-0.61/terminal.c</name>
+    <line>2540</line>
+    <line>4550</line>
+    <line>4551</line>
+    <line>4640</line>
+    <line>5317</line>
+  
+
+    <name>putty-0.61/cmdline.c</name>
+    <line>296</line>
+  
+
+    <name>putty-0.61/sshrsa.c</name>
+    <line>612</line>
+    <line>907</line>
+    <line>1040</line>
+  
+
+    <name>putty-0.61/sftp.c</name>
+    <line>42</line>
+    <line>385</line>
+    <line>933</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>447</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>253</line>
+    <line>385</line>
+  
+
+    <name>putty-0.61/unix/uxucs.c</name>
+    <line>82</line>
+  
+
+    <name>putty-0.61/unix/gtkdlg.c</name>
+    <line>600</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>1642</line>
+    <line>3080</line>
+    <line>3127</line>
+  
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>262</line>
+    <line>414</line>
+    <line>417</line>
+    <line>426</line>
+    <line>977</line>
+    <line>1092</line>
+  
+
+    <name>putty-0.61/unix/uxagentc.c</name>
+    <line>86</line>
+  
+
+    <name>putty-0.61/import.c</name>
+    <line>261</line>
+    <line>273</line>
+    <line>277</line>
+    <line>442</line>
+    <line>615</line>
+    <line>617</line>
+    <line>653</line>
+    <line>657</line>
+    <line>668</line>
+    <line>851</line>
+    <line>1154</line>
+    <line>1270</line>
+  
+
+    <name>putty-0.61/ssh.c</name>
+    <line>1243</line>
+    <line>1290</line>
+    <line>1521</line>
+    <line>1591</line>
+    <line>1645</line>
+    <line>1793</line>
+    <line>2051</line>
+    <line>2598</line>
+    <line>2704</line>
+    <line>3249</line>
+    <line>3506</line>
+    <line>3687</line>
+    <line>4811</line>
+    <line>4957</line>
+    <line>4968</line>
+    <line>4974</line>
+    <line>5650</line>
+    <line>6033</line>
+    <line>6073</line>
+    <line>6175</line>
+    <line>6738</line>
+    <line>6749</line>
+    <line>6755</line>
+    <line>7179</line>
+    <line>7577</line>
+    <line>7825</line>
+    <line>7834</line>
+    <line>7837</line>
+    <line>8043</line>
+    <line>8046</line>
+  
+
+    <name>putty-0.61/sshgssc.c</name>
+    <line>118</line>
+    <line>120</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>376</line>
+    <line>387</line>
+    <line>441</line>
+  
+
+    <name>putty-0.61/psftp.c</name>
+    <line>2536</line>
+    <line>2548</line>
+    <line>2576</line>
+  
+
+    <name>putty-0.61/sshsha.c</name>
+    <line>118</line>
+    <line>125</line>
+    <line>139</line>
+    <line>336</line>
+    <line>344</line>
+  
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>444</line>
+    <line>615</line>
+    <line>656</line>
+    <line>662</line>
+    <line>718</line>
+    <line>722</line>
+    <line>769</line>
+    <line>773</line>
+    <line>804</line>
+    <line>839</line>
+    <line>889</line>
+    <line>908</line>
+    <line>944</line>
+    <line>974</line>
+    <line>1012</line>
+    <line>1084</line>
+    <line>1159</line>
+  
+
+    <name>putty-0.61/windows/windlg.c</name>
+    <line>137</line>
+    <line>139</line>
+  
+
+    <name>putty-0.61/windows/winucs.c</name>
+    <line>477</line>
+    <line>485</line>
+    <line>520</line>
+    <line>522</line>
+  
+
+    <name>putty-0.61/windows/winctrls.c</name>
+    <line>1663</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>3721</line>
+    <line>3784</line>
+    <line>4651</line>
+    <line>4696</line>
+    <line>4965</line>
+    <line>5026</line>
+  
+
+    <name>putty-0.61/windows/winnet.c</name>
+    <line>486</line>
+    <line>504</line>
+    <line>507</line>
+    <line>692</line>
+    <line>695</line>
+    <line>705</line>
+    <line>1357</line>
+  
+
+    <name>putty-0.61/windows/winpgntc.c</name>
+    <line>57</line>
+    <line>215</line>
+    <line>254</line>
+  
+
+    <name>putty-0.61/windows/winmisc.c</name>
+    <line>376</line>
+  
+
+    <name>putty-0.61/sshbn.c</name>
+    <line>142</line>
+  
+
+    <name>putty-0.61/sshsh256.c</name>
+    <line>118</line>
+    <line>125</line>
+    <line>139</line>
+  
+
+    <name>putty-0.61/sshpubk.c</name>
+    <line>81</line>
+    <line>289</line>
+    <line>316</line>
+    <line>1079</line>
+    <line>1084</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>strncpy</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string. Also, consider using strlcpy() instead, if it is avaialable to you.
+  </message>
+
+    <name>putty-0.61/settings.c</name>
+    <line>76</line>
+    <line>83</line>
+    <line>104</line>
+    <line>107</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>69</line>
+  
+
+    <name>putty-0.61/pscp.c</name>
+    <line>346</line>
+    <line>351</line>
+    <line>383</line>
+    <line>407</line>
+    <line>416</line>
+  
+
+    <name>putty-0.61/cmdline.c</name>
+    <line>108</line>
+    <line>215</line>
+    <line>226</line>
+    <line>233</line>
+    <line>258</line>
+  
+
+    <name>putty-0.61/sshrsa.c</name>
+    <line>385</line>
+    <line>390</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>200</line>
+    <line>201</line>
+    <line>202</line>
+    <line>203</line>
+    <line>221</line>
+    <line>222</line>
+    <line>358</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>337</line>
+    <line>473</line>
+    <line>480</line>
+  
+
+    <name>putty-0.61/unix/uxplink.c</name>
+    <line>688</line>
+    <line>736</line>
+    <line>748</line>
+    <line>807</line>
+  
+
+    <name>putty-0.61/unix/gtkdlg.c</name>
+    <line>356</line>
+    <line>360</line>
+    <line>371</line>
+    <line>934</line>
+    <line>954</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>659</line>
+    <line>1908</line>
+    <line>1916</line>
+    <line>2524</line>
+    <line>2530</line>
+    <line>2536</line>
+    <line>2542</line>
+    <line>2548</line>
+    <line>2621</line>
+    <line>2627</line>
+  
+
+    <name>putty-0.61/unix/uxputty.c</name>
+    <line>88</line>
+    <line>100</line>
+  
+
+    <name>putty-0.61/unix/uxmisc.c</name>
+    <line>33</line>
+  
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>257</line>
+    <line>271</line>
+    <line>288</line>
+    <line>323</line>
+    <line>338</line>
+  
+
+    <name>putty-0.61/unix/uxagentc.c</name>
+    <line>128</line>
+  
+
+    <name>putty-0.61/import.c</name>
+    <line>1127</line>
+  
+
+    <name>putty-0.61/ssh.c</name>
+    <line>1005</line>
+    <line>4650</line>
+  
+
+    <name>putty-0.61/psftp.c</name>
+    <line>2677</line>
+    <line>2682</line>
+    <line>2723</line>
+    <line>2752</line>
+  
+
+    <name>putty-0.61/config.c</name>
+    <line>421</line>
+    <line>520</line>
+    <line>802</line>
+    <line>825</line>
+  
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>365</line>
+    <line>375</line>
+  
+
+    <name>putty-0.61/windows/winctrls.c</name>
+    <line>435</line>
+    <line>1951</line>
+    <line>1962</line>
+  
+
+    <name>putty-0.61/windows/winplink.c</name>
+    <line>371</line>
+    <line>419</line>
+    <line>431</line>
+    <line>490</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>549</line>
+    <line>561</line>
+    <line>594</line>
+  
+
+    <name>putty-0.61/windows/winnet.c</name>
+    <line>491</line>
+    <line>493</line>
+    <line>509</line>
+    <line>521</line>
+    <line>540</line>
+    <line>579</line>
+    <line>581</line>
+    <line>590</line>
+    <line>593</line>
+  
+
+    <name>putty-0.61/windows/winmisc.c</name>
+    <line>20</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>strlen</type>
+  <message>
+    This function does not properly handle non-NULL terminated
+strings.  This does not result in exploitable code, but can lead to access 
+violations.
+  </message>
+
+    <name>putty-0.61/settings.c</name>
+    <line>306</line>
+    <line>504</line>
+    <line>956</line>
+    <line>962</line>
+  
+
+    <name>putty-0.61/contrib/cygtermd/malloc.c</name>
+    <line>40</line>
+  
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>53</line>
+    <line>249</line>
+    <line>251</line>
+    <line>864</line>
+    <line>961</line>
+    <line>963</line>
+    <line>965</line>
+    <line>1039</line>
+  
+
+    <name>putty-0.61/pscp.c</name>
+    <line>81</line>
+    <line>374</line>
+    <line>386</line>
+    <line>802</line>
+    <line>817</line>
+    <line>857</line>
+    <line>858</line>
+    <line>1015</line>
+    <line>1016</line>
+    <line>1056</line>
+    <line>1089</line>
+    <line>2115</line>
+    <line>2117</line>
+  
+
+    <name>putty-0.61/proxy.c</name>
+    <line>285</line>
+    <line>289</line>
+    <line>533</line>
+    <line>541</line>
+    <line>543</line>
+    <line>547</line>
+    <line>726</line>
+    <line>731</line>
+    <line>746</line>
+    <line>1040</line>
+    <line>1110</line>
+    <line>1154</line>
+    <line>1156</line>
+    <line>1340</line>
+    <line>1357</line>
+    <line>1365</line>
+    <line>1373</line>
+    <line>1384</line>
+    <line>1426</line>
+  
+
+    <name>putty-0.61/logging.c</name>
+    <line>69</line>
+    <line>315</line>
+    <line>409</line>
+  
+
+    <name>putty-0.61/x11fwd.c</name>
+    <line>716</line>
+    <line>741</line>
+  
+
+    <name>putty-0.61/sshdss.c</name>
+    <line>202</line>
+    <line>204</line>
+  
+
+    <name>putty-0.61/telnet.c</name>
+    <line>379</line>
+  
+
+    <name>putty-0.61/cproxy.c</name>
+    <line>26</line>
+    <line>172</line>
+  
+
+    <name>putty-0.61/ldisc.c</name>
+    <line>141</line>
+  
+
+    <name>putty-0.61/sshsh512.c</name>
+    <line>331</line>
+  
+
+    <name>putty-0.61/terminal.c</name>
+    <line>3161</line>
+    <line>3438</line>
+    <line>3446</line>
+    <line>3833</line>
+    <line>3846</line>
+    <line>6511</line>
+    <line>6518</line>
+    <line>6539</line>
+  
+
+    <name>putty-0.61/cmdline.c</name>
+    <line>66</line>
+    <line>111</line>
+    <line>254</line>
+    <line>280</line>
+    <line>360</line>
+    <line>476</line>
+  
+
+    <name>putty-0.61/sshrsa.c</name>
+    <line>383</line>
+    <line>387</line>
+    <line>787</line>
+    <line>789</line>
+  
+
+    <name>putty-0.61/sftp.c</name>
+    <line>86</line>
+  
+
+    <name>putty-0.61/rlogin.c</name>
+    <line>127</line>
+    <line>130</line>
+    <line>133</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>618</line>
+    <line>736</line>
+    <line>846</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>43</line>
+    <line>71</line>
+    <line>464</line>
+    <line>467</line>
+    <line>528</line>
+    <line>538</line>
+    <line>547</line>
+  
+
+    <name>putty-0.61/unix/uxplink.c</name>
+    <line>798</line>
+    <line>810</line>
+  
+
+    <name>putty-0.61/unix/gtkfont.c</name>
+    <line>488</line>
+    <line>576</line>
+    <line>578</line>
+    <line>580</line>
+    <line>581</line>
+    <line>582</line>
+    <line>1267</line>
+    <line>1890</line>
+    <line>1891</line>
+    <line>1891</line>
+    <line>1892</line>
+    <line>1892</line>
+    <line>1898</line>
+    <line>1902</line>
+    <line>1908</line>
+    <line>1914</line>
+    <line>1920</line>
+  
+
+    <name>putty-0.61/unix/gtkdlg.c</name>
+    <line>3577</line>
+    <line>3746</line>
+    <line>3746</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>683</line>
+    <line>701</line>
+    <line>1839</line>
+    <line>3076</line>
+    <line>3085</line>
+    <line>3400</line>
+  
+
+    <name>putty-0.61/unix/uxmisc.c</name>
+    <line>62</line>
+  
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>278</line>
+    <line>660</line>
+    <line>1399</line>
+  
+
+    <name>putty-0.61/unix/uxcons.c</name>
+    <line>372</line>
+    <line>379</line>
+    <line>400</line>
+  
+
+    <name>putty-0.61/import.c</name>
+    <line>117</line>
+    <line>349</line>
+    <line>361</line>
+    <line>373</line>
+    <line>451</line>
+    <line>472</line>
+    <line>541</line>
+    <line>547</line>
+    <line>899</line>
+    <line>905</line>
+    <line>1070</line>
+    <line>1096</line>
+    <line>1109</line>
+    <line>1115</line>
+    <line>1123</line>
+    <line>1125</line>
+    <line>1161</line>
+    <line>1176</line>
+    <line>1378</line>
+    <line>1382</line>
+    <line>1603</line>
+    <line>1606</line>
+    <line>1652</line>
+    <line>1656</line>
+    <line>1689</line>
+  
+
+    <name>putty-0.61/ssh.c</name>
+    <line>1015</line>
+    <line>1175</line>
+    <line>1816</line>
+    <line>2604</line>
+    <line>3265</line>
+    <line>3266</line>
+    <line>3807</line>
+    <line>4069</line>
+    <line>4113</line>
+    <line>4134</line>
+    <line>5323</line>
+    <line>5354</line>
+    <line>5892</line>
+    <line>5893</line>
+    <line>7981</line>
+    <line>8550</line>
+    <line>8566</line>
+    <line>8633</line>
+  
+
+    <name>putty-0.61/sshgssc.c</name>
+    <line>30</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>138</line>
+    <line>152</line>
+    <line>158</line>
+    <line>164</line>
+    <line>172</line>
+    <line>279</line>
+  
+
+    <name>putty-0.61/psftp.c</name>
+    <line>60</line>
+    <line>104</line>
+    <line>145</line>
+    <line>848</line>
+    <line>883</line>
+    <line>932</line>
+    <line>1005</line>
+    <line>1214</line>
+    <line>1556</line>
+    <line>2159</line>
+    <line>2714</line>
+    <line>2726</line>
+  
+
+    <name>putty-0.61/config.c</name>
+    <line>778</line>
+    <line>803</line>
+    <line>815</line>
+    <line>817</line>
+    <line>817</line>
+    <line>820</line>
+    <line>821</line>
+    <line>845</line>
+    <line>856</line>
+    <line>856</line>
+    <line>860</line>
+    <line>861</line>
+    <line>888</line>
+    <line>901</line>
+    <line>914</line>
+    <line>917</line>
+    <line>993</line>
+    <line>1036</line>
+    <line>1060</line>
+    <line>1063</line>
+  
+
+    <name>putty-0.61/wildcard.c</name>
+    <line>275</line>
+  
+
+    <name>putty-0.61/windows/wingss.c</name>
+    <line>397</line>
+  
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>179</line>
+    <line>346</line>
+    <line>372</line>
+    <line>588</line>
+    <line>639</line>
+    <line>640</line>
+    <line>707</line>
+    <line>721</line>
+    <line>722</line>
+    <line>723</line>
+    <line>752</line>
+    <line>772</line>
+    <line>773</line>
+    <line>774</line>
+    <line>1426</line>
+    <line>1436</line>
+    <line>1441</line>
+  
+
+    <name>putty-0.61/windows/winstore.c</name>
+    <line>87</line>
+    <line>113</line>
+    <line>136</line>
+    <line>242</line>
+    <line>302</line>
+    <line>304</line>
+    <line>317</line>
+    <line>324</line>
+    <line>324</line>
+    <line>393</line>
+    <line>419</line>
+    <line>419</line>
+    <line>425</line>
+    <line>672</line>
+    <line>679</line>
+    <line>690</line>
+    <line>693</line>
+  
+
+    <name>putty-0.61/windows/windlg.c</name>
+    <line>129</line>
+    <line>136</line>
+    <line>320</line>
+    <line>718</line>
+    <line>718</line>
+  
+
+    <name>putty-0.61/windows/winctrls.c</name>
+    <line>383</line>
+    <line>386</line>
+    <line>409</line>
+    <line>411</line>
+    <line>1173</line>
+    <line>1760</line>
+    <line>1765</line>
+  
+
+    <name>putty-0.61/windows/winplink.c</name>
+    <line>237</line>
+    <line>238</line>
+    <line>264</line>
+    <line>265</line>
+    <line>481</line>
+    <line>493</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>421</line>
+    <line>585</line>
+    <line>597</line>
+    <line>4524</line>
+    <line>4533</line>
+    <line>4717</line>
+    <line>4775</line>
+    <line>5035</line>
+    <line>5037</line>
+  
+
+    <name>putty-0.61/windows/winnet.c</name>
+    <line>524</line>
+    <line>1694</line>
+  
+
+    <name>putty-0.61/windows/wincons.c</name>
+    <line>353</line>
+    <line>360</line>
+    <line>380</line>
+  
+
+    <name>putty-0.61/windows/winutils.c</name>
+    <line>286</line>
+    <line>287</line>
+    <line>288</line>
+    <line>505</line>
+    <line>505</line>
+    <line>533</line>
+  
+
+    <name>putty-0.61/windows/winpgntc.c</name>
+    <line>217</line>
+  
+
+    <name>putty-0.61/windows/winmisc.c</name>
+    <line>155</line>
+  
+
+    <name>putty-0.61/windows/winpgen.c</name>
+    <line>382</line>
+    <line>383</line>
+    <line>385</line>
+  
+
+    <name>putty-0.61/windows/winjump.c</name>
+    <line>561</line>
+    <line>596</line>
+  
+
+    <name>putty-0.61/sshbn.c</name>
+    <line>1790</line>
+  
+
+    <name>putty-0.61/sshsh256.c</name>
+    <line>253</line>
+  
+
+    <name>putty-0.61/sshpubk.c</name>
+    <line>108</line>
+    <line>314</line>
+    <line>316</line>
+    <line>317</line>
+    <line>358</line>
+    <line>579</line>
+    <line>628</line>
+    <line>764</line>
+    <line>765</line>
+    <line>766</line>
+    <line>1092</line>
+    <line>1093</line>
+    <line>1094</line>
+    <line>1116</line>
+    <line>1129</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>Static Global Buffer</type>
+  <message>
+    Extra care should be taken to ensure that character arrays that are
+    allocated with a static size are used safely.  This appears to be a
+    global allocation and is less dangerous than a similar one on the stack.
+    Extra caution is still advised, however.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>23</line>
+  
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>46</line>
+  
+
+    <name>putty-0.61/sshzlib.c</name>
+    <line>384</line>
+  
+
+    <name>putty-0.61/sshaes.c</name>
+    <line>52</line>
+    <line>87</line>
+  
+
+    <name>putty-0.61/nogss.c</name>
+    <line>10</line>
+  
+
+    <name>putty-0.61/unix/uxgss.c</name>
+    <line>12</line>
+    <line>116</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>34</line>
+  
+
+    <name>putty-0.61/windows/wingss.c</name>
+    <line>16</line>
+  
+
+    <name>putty-0.61/windows/winstore.c</name>
+    <line>24</line>
+  
+
+    <name>putty-0.61/windows/winjump.c</name>
+    <line>363</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fork</type>
+  <message>
+    Remember that sensitive data get copied on fork.  For example, a random
+      number generator's internal state will get duplicated, and the child
+      may start outputting identical number streams.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>96</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>423</line>
+    <line>757</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>3014</line>
+    <line>3021</line>
+  
+
+    <name>putty-0.61/unix/uxproxy.c</name>
+    <line>271</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>31</line>
+    <line>87</line>
+    <line>120</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>281</line>
+    <line>338</line>
+    <line>787</line>
+  
+
+    <name>putty-0.61/unix/uxgen.c</name>
+    <line>17</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>639</line>
+    <line>661</line>
+    <line>669</line>
+  
+
+    <name>putty-0.61/unix/uxmisc.c</name>
+    <line>146</line>
+  
+
+    <name>putty-0.61/unix/uxser.c</name>
+    <line>307</line>
+  
+
+    <name>putty-0.61/unix/uxnoise.c</name>
+    <line>24</line>
+    <line>122</line>
+    <line>127</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/contrib/cygtermd/pty.c</name>
+    <line>176</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>3043</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fgets</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>1172</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>278</line>
+  
+
+    <name>putty-0.61/sshpubk.c</name>
+    <line>175</line>
+    <line>214</line>
+    <line>254</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>176</line>
+    <line>1169</line>
+  
+
+    <name>putty-0.61/sshzlib.c</name>
+    <line>1337</line>
+  
+
+    <name>putty-0.61/x11fwd.c</name>
+    <line>372</line>
+  
+
+    <name>putty-0.61/cmdline.c</name>
+    <line>318</line>
+  
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>224</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>184</line>
+    <line>291</line>
+    <line>515</line>
+    <line>590</line>
+    <line>598</line>
+    <line>605</line>
+  
+
+    <name>putty-0.61/unix/uxmisc.c</name>
+    <line>59</line>
+    <line>141</line>
+  
+
+    <name>putty-0.61/unix/uxcons.c</name>
+    <line>340</line>
+  
+
+    <name>putty-0.61/misc.c</name>
+    <line>476</line>
+  
+
+    <name>putty-0.61/psftp.c</name>
+    <line>2401</line>
+  
+
+    <name>putty-0.61/windows/winpgnt.c</name>
+    <line>2009</line>
+  
+
+    <name>putty-0.61/windows/winhelp.c</name>
+    <line>38</line>
+    <line>44</line>
+    <line>52</line>
+  
+
+    <name>putty-0.61/windows/winmisc.c</name>
+    <line>151</line>
+  
+
+    <name>putty-0.61/windows/winpgen.c</name>
+    <line>410</line>
+    <line>451</line>
+    <line>1155</line>
+    <line>1203</line>
+  
+
+    <name>putty-0.61/windows/winjump.c</name>
+    <line>401</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>221</line>
+    <line>227</line>
+  
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>626</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/cmdgen.c</name>
+    <line>226</line>
+  
+
+    <name>putty-0.61/windows/winstore.c</name>
+    <line>439</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>840</line>
+  
+
+    <name>putty-0.61/unix/gtkwin.c</name>
+    <line>3044</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/unix/uxpty.c</name>
+    <line>851</line>
+  
+
+    <name>putty-0.61/unix/uxproxy.c</name>
+    <line>285</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>175</line>
+    <line>177</line>
+    <line>179</line>
+    <line>595</line>
+    <line>666</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>438</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>fixed size local buffer</type>
+  <message>
+    A potential race condition vulnerability exists here.  Normally a call
+    to this function is vulnerable only when a match check precedes it.  No
+    check was detected, however one could still exist that could not be
+    detected.
+  </message>
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>448</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>stat</type>
+  <message>
+    A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.
+    This is the first line where a check has occured.    No matching uses were detected.
+  </message>
+
+    <name>putty-0.61/unix/uxstore.c</name>
+    <line>476</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>snprintf</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>putty-0.61/unix/uxnet.c</name>
+    <line>1415</line>
+    <line>1418</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>WideCharToMultiByte</type>
+  <message>
+    Double check that your buffer is as big as you specify.
+When using functions that accept a number n of bytes to copy, such as 
+strncpy, be aware that if the dest buffer size = n it may not NULL-terminate 
+the string.
+  </message>
+
+    <name>putty-0.61/windows/winucs.c</name>
+    <line>1238</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>4678</line>
+    <line>4697</line>
+    <line>4907</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>MultiByteToWideChar</type>
+  <message>
+    The last argument is the number of wide chars, not the number of bytes.  Getting this wrong can cause a buffer overflow since you will indicate that the buffer is twice the size it actually is.  Don't forget about NULL termination.
+  </message>
+
+    <name>putty-0.61/windows/winucs.c</name>
+    <line>1245</line>
+  
+
+    <name>putty-0.61/windows/window.c</name>
+    <line>3414</line>
+    <line>3422</line>
+    <line>5035</line>
+    <line>5037</line>
+  
+</vulnerability>
+<vulnerability>
+  <severity>Low</severity>
+  <type>_tcslen</type>
+  <message>
+    This function does not properly handle non-NULL terminated
+strings.  This does not result in exploitable code, but can lead to access 
+violations.
+  </message>
+
+    <name>putty-0.61/windows/sizetip.c</name>
+    <line>79</line>
+    <line>156</line>
+  
+</vulnerability>
+<timing>
+<total_lines>110398</total_lines>
+<total_time>0.052381</total_time>
+<lines_per_second>2107596</lines_per_second>
+</timing>
+</rats_output>
